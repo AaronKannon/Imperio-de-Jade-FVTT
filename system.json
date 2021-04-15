@@ -16,10 +16,10 @@
     "gridUnits": "m",
     "primaryTokenAttribute": "attributes.pv",
     "secondaryTokenAttribute": "attributes.pm",
-    "url": "https://gitlab.com/mrolhinho1/imperiodejade",
-    "manifest": "https://gitlab.com/mrolhinho1/imperiodejade/-/raw/master/system.json",
-    "download": "https://gitlab.com/mrolhinho1/imperiodejade/-/archive/master/imperiodejade-master.zip",
+    "url": "https://github.com/AaronKannon/Imperio-de-Jade-FVTT",
+    "manifest": "https://raw.githubusercontent.com/AaronKannon/Imperio-de-Jade-FVTT/main/system.json",
+    "download": "https://github.com/AaronKannon/Imperio-de-Jade-FVTT/archive/refs/heads/v0.0.1.zip",
     "license": "LICENSE.txt",
-    "bugs": "https://gitlab.com/mrolhinho1/imperiodejade/-/issues",
+    "bugs": "https://github.com/AaronKannon/Imperio-de-Jade-FVTT/issues",
     "allowBugReporter": true
 }
