@@ -1,0 +1,125 @@
+{
+    "Actor": {},
+    "Item": {
+        "types": ["arma","equip","classe","consumivel","jutsu","poder","tesouro"],
+        "templates": {
+          "itemDescription": {
+            "description": {
+              "value": "",
+              "chat": "",
+              "unidentified": ""
+            },
+            "source": ""
+          },
+          "efeitoAtivado": {
+            "alcance": "",
+            "target": {
+              "value":null,
+              "comprimento":null,
+              "unidades":"",
+              "type":""
+            },
+            "alvo": "",
+            "area": "",
+            "ativacao": {
+              "execucao": "",
+              "custo": 0,
+              "condicao": ""
+            },
+            "duracao": {
+              "valor": "",
+              "unidade": ""
+            }
+          },
+          "resistencia": {
+            "resistencia" : "",
+            "atrRes": "",
+            "cd": 0
+          },
+          "base": {
+            "description": ""
+          },
+          "objeto":{
+            "peso": 0,
+            "qtd": 1,
+            "preco": 0
+          },
+          "aprimoramento": {
+            "aprimoramentos": []
+          }
+        },
+        "equip": {
+          "templates": ["base", "objeto"],
+          "equipado": false,
+          "tipo": "leve",
+          "armadura": {
+            "value": 0,
+            "penalidade": 0
+          }
+        },
+        "talento": {
+          "templates": ["base", "efeitoAtivado", "resistencia","aprimoramento"],
+          "roll": "",
+          "tipo": "",
+          "subtipo": "",
+          "custo": "_deprecated"
+        },
+        "jutsu": {
+          "templates": ["base","aprimoramento", "efeitoAtivado", "resistencia"],
+          "tipo": "",
+          "circulo": 1,
+          "preparada": false,
+          "escola": "",
+          "efeito": "",
+          "execucao": "_deprecated",
+          "custo": "_deprecated"
+        },
+        "tesouro": {
+          "templates": ["base","objeto"]
+        },
+        "arma": {
+          "templates": ["base","objeto"],
+          "atrAtq": "0",
+          "pericia": "lut",
+          "atrDan": "for",
+          "dano": "1d6",
+          "atqBns": "0",
+          "danoBns": "0",
+          "criticoM": 20,
+          "criticoX": 2,
+          "lancinante": false,
+          "tipo": "",
+          "alcance": "",
+          "custo": 0,
+          "tipoUso": "simples",
+          "propriedades": {"adaptavel":false,"agil":false,"alongada":false,"arremesso":false,"ataqueDistancia":false,"duasMaos":false,"dupla":false,"leve":false,"municao":false,"versatil":false}
+        },
+        "consumivel": {
+          "templates": ["base","objeto", "efeitoAtivado", "resistencia"],
+          "efeito": ""
+        },
+        "skill":{
+          "templates": ["itemDescription"],
+          "total":0,
+          "bonus":0,
+          "ability":"",
+          "trained":false,
+          "reqTraining":false,
+          "armorPenalty":false,
+          "toIniciative":false,
+          "groups": {}
+        },
+        "classe": {
+          "templates": ["base"],
+          "niveis": 1,
+          "pvPorNivel": "2",
+          "pmPorNivel": "3",
+          "pericias": {
+            "numero": 2,
+            "inatas": "",
+            "escolhas": [],
+            "value": []
+          }
+        }
+      }
+}
