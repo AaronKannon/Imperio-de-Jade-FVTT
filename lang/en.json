@@ -38,6 +38,20 @@
             "esmagamento": "Esmagamento",
             "perfuracao": "Perfuração",
             "corte": "Corte"
+        },
+        "tipoUso": {
+            "simples": "Simples",
+            "marcial": "Marcial",
+            "exotica": "Exótica"
         }
-    }
+    },
+    "ACTOR.TypeCharacter": "Personagem de Jogador",
+    "ACTOR.TypeNpc": "Personagem do Mestre",
+    "ITEM.TypeArma": "Arma",
+    "ITEM.TypeEquip": "Armadura",
+    "ITEM.TypeClasse": "Classe",
+    "ITEM.TypeConsumivel": "Consumível",
+    "ITEM.TypeJutsu": "Jutsu",
+    "ITEM.TypeTalento": "Talento",
+    "ITEM.TypeTesouro": "Tesouro"
 }

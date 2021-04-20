@@ -280,7 +280,7 @@
     }
   },
     "Item": {
-        "types": ["arma","equip","classe","consumivel","jutsu","poder","tesouro"],
+        "types": ["arma","equip","classe","consumivel","jutsu","talento","tesouro"],
         "templates": {
           "itemDescription": {
             "description": ""
@@ -359,7 +359,8 @@
           "critico": "20/x2",
           "distancia": "-",
           "tipodano": "esmagamento",
-          "description": ""
+          "tipoUso": "simples",
+          "propriedades": {"acuidade":false,"arremesso":false,"ataqueDistancia":false,"duasMaos":false,"dupla":false,"leve":false,"municao":false,"versatil":false}
         },
         "consumivel": {
           "templates": ["base","objeto", "efeitoAtivado", "resistencia"],

@@ -41,3 +41,9 @@ idj.tipodano = {
     perfuracao: "idj.tipodano.perfuracao",
     corte: "idj.tipodano.corte"
 }
+
+idj.tipoUso = {
+    simples: "idj.tipoUso.simples",
+    marcial: "idj.tipoUso.marcial",
+    exotica: "idj.tipoUso.exotica"
+}

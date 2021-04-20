@@ -8,7 +8,7 @@
 		{{#if (or (eq item.type "jutsu") (eq item.type "arma"))}}
 		<footer>
 			{{#if (eq item.type "jutsu")}}<label style="font-size: 11px">{{data.tipo}} {{data.circulo}} ({{data.escola}})</label>{{/if}}
-			{{#if (eq item.type "arma")}}<label style="font-size: 11px">{{lookup config.weaponTypes data.tipoUso }} — {{#if data.propriedades.ataqueDistancia}}Ataque à Distância ({{data.alcance}}){{else}}Corpo a Corpo{{/if}} — {{#if data.propriedades.duasMaos}}Duas Mãos{{else}}{{#if data.propriedades.leve}}Leve{{else}}Uma Mão{{/if}}{{/if}}</label>{{/if}}
+			{{#if (eq item.type "arma")}}<label style="font-size: 11px">{{lookup config.tipoUso data.tipoUso }} — {{#if data.propriedades.ataqueDistancia}}Ataque à Distância ({{data.alcance}}){{else}}Corpo a Corpo{{/if}} — {{#if data.propriedades.duasMaos}}Duas Mãos{{else}}{{#if data.propriedades.leve}}Leve{{else}}Uma Mão{{/if}}{{/if}}</label>{{/if}}
 		</footer>
 		{{/if}}
 	</div>
