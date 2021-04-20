@@ -1,0 +1,43 @@
+{
+    "idj": {
+        "pericias": {
+            "acrobacia": "Acrobacia",
+            "adestrar_animais": "Adestrar Animais",
+            "atletismo": "Atletismo",
+            "atuacao": "Atuação",
+            "cavalgar": "Cavalgar",
+            "conhecimento": "Conhecimento",
+            "cura": "Cura",
+            "diplomacia": "Diplomacia",
+            "enganacao": "Enganação",
+            "furtividade": "Furtividade",
+            "identificar_magia": "Identificar Magia",
+            "iniciativa": "Iniciatica",
+            "intimidacao": "Intimidação",
+            "intuicao": "Intuição",
+            "ladinagem": "Ladinagem",
+            "obter_informacao": "Obter Informação",
+            "oficios": "Ofícios",
+            "percepcao": "Percepção",
+            "sobrevivencia": "Sobrevivência"
+        },
+        "arma": {
+            "dano": "Dano",
+            "bonusataque": "Bonus de Ataque",
+            "critico": "Crítico",
+            "distancia": "Distância",
+            "peso": "Peso",
+            "tipoataque": "Tipo de Ataque",
+            "tipodano": "Tipo"
+        },
+        "tipoataque": {
+            "corpoacorpo": "Corpo-a-Corpo",
+            "adistancia": "A Distância"
+        },
+        "tipodano": {
+            "esmagamento": "Esmagamento",
+            "perfuracao": "Perfuração",
+            "corte": "Corte"
+        }
+    }
+}

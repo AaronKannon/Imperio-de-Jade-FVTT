@@ -1,0 +1,51 @@
+<form class="{{cssClass}}" autocomplete="off">
+    
+    {{!-- Item Sheet Header --}}
+    {{> "systems/imperiodejade/templates/item/parts/item-header.hbs"}}
+
+    <div class="sheet-content">
+        <table>
+            <tr>
+                <th>{{localize "idj.arma.tipoataque"}}</th>
+                <th>{{localize "idj.arma.bonusataque"}}</th>
+                <th>{{localize "idj.arma.dano"}}</th>
+                <th>{{localize "idj.arma.critico"}}</th>
+                <th>{{localize "idj.arma.distancia"}}</th>
+                <th>{{localize "idj.arma.tipodano"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="data.tipoataque">
+                        {{#select data.tipoataque}}
+                        {{#each config.tipoataque as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <input name="data.bonusataque" type="text" value="{{data.bonusataque}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.dano" type="text" value="{{data.dano}}" data-dtype="String"/>
+                </td>
+                <td>
+                    <input name="data.critico" type="text" value="{{data.critico}}" data-dtype="String"/>
+                </td>
+                <td>
+                    <input name="data.distancia" type="text" value="{{data.distancia}}" data-dtype="String"/>
+                </td>
+                <td>
+                    <select name="data.tipodano">
+                        {{#select data.tipodano}}
+                        {{#each config.tipodano as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+        </table>
+        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+    </div>
+</form>
