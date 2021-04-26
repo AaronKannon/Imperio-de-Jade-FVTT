@@ -4,7 +4,8 @@ export default class IDJItemSheet extends ItemSheet {
         return mergeObject(super.defaultOptions, {
 			classes: ["idj", "sheet", "item"],
 			width: 620,
-			height: 480
+			height: 480,
+            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
 		});
     }
     

@@ -39,7 +39,7 @@
             "perfuracao": "Perfuração",
             "corte": "Corte"
         },
-        "tipoUso": {
+        "tipoArma": {
             "simples": "Simples",
             "marcial": "Marcial",
             "exotica": "Exótica"

@@ -3,7 +3,8 @@ import IDJItemSheet from "./sheet/IDJItemSheet.js";
 //import IDJActorSheet from "./module/sheet/IDJActorSheet.js";
 
 //Carregando Templates para modularidade
-import { preloadHandlebarsTemplates } from "./templates.js"
+import { preloadHandlebarsTemplates } from "./templates.js";
+import { registerHandlebarsHelpers } from "./handlebars.js";
 
 /* -------------------------------------------- */
 /*  Foundry VTT Setup                           */
@@ -16,11 +17,13 @@ import { preloadHandlebarsTemplates } from "./templates.js"
 
     // Localize CONFIG objects once up-front
     const toLocalize = [
-      "tipoUso"
+      "tipoArma"
     ];
   
     // Exclude some from sorting where the default order matters
-    const noSort = [];
+    const noSort = [
+        "tipoArma"
+    ];
   
     // Localize and sort CONFIG objects
     for ( let o of toLocalize ) {
@@ -43,4 +46,5 @@ Hooks.once("init", function () {
     Items.registerSheet("idj", IDJItemSheet, { makeDefault: true });
 
     preloadHandlebarsTemplates();
+    registerHandlebarsHelpers();
 });

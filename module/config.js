@@ -42,8 +42,21 @@ idj.tipodano = {
     corte: "idj.tipodano.corte"
 }
 
-idj.tipoUso = {
-    simples: "idj.tipoUso.simples",
-    marcial: "idj.tipoUso.marcial",
-    exotica: "idj.tipoUso.exotica"
+idj.tipoArma = {
+    simples: "idj.tipoArma.simples",
+    marcial: "idj.tipoArma.marcial",
+    exotica: "idj.tipoArma.exotica"
 }
+
+idj.weaponProperties = {
+    "adaptavel": "Adaptável",
+    "agil": "Ágil",
+    "alongada": "Alongada",
+    "arremesso": "Arremesso",
+    "ataqueDistancia": "Ataque à Distância",
+    "duasMaos": "Duas Mãos",
+    "dupla": "Dupla",
+    "leve": "Leve",
+    "municao": "Munição",
+    "versatil": "Versátil"
+  };

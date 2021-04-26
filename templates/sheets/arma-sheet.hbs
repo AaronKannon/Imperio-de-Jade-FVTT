@@ -3,49 +3,118 @@
     {{!-- Item Sheet Header --}}
     {{> "systems/imperiodejade/templates/item/parts/item-header.hbs"}}
 
-    <div class="sheet-content">
-        <table>
-            <tr>
-                <th>{{localize "idj.arma.tipoataque"}}</th>
-                <th>{{localize "idj.arma.bonusataque"}}</th>
-                <th>{{localize "idj.arma.dano"}}</th>
-                <th>{{localize "idj.arma.critico"}}</th>
-                <th>{{localize "idj.arma.distancia"}}</th>
-                <th>{{localize "idj.arma.tipodano"}}</th>
-            </tr>
-            <tr>
-                <td>
-                    <select name="data.tipoataque">
-                        {{#select data.tipoataque}}
-                        {{#each config.tipoataque as |name type|}}
-                        <option value="{{type}}">{{localize name}}</option>
-                        {{/each}}
-                        {{/select}}
-                    </select>
-                </td>
-                <td>
-                    <input name="data.bonusataque" type="text" value="{{data.bonusataque}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="data.dano" type="text" value="{{data.dano}}" data-dtype="String"/>
-                </td>
-                <td>
-                    <input name="data.critico" type="text" value="{{data.critico}}" data-dtype="String"/>
-                </td>
-                <td>
-                    <input name="data.distancia" type="text" value="{{data.distancia}}" data-dtype="String"/>
-                </td>
-                <td>
-                    <select name="data.tipodano">
-                        {{#select data.tipodano}}
-                        {{#each config.tipodano as |name type|}}
-                        <option value="{{type}}">{{localize name}}</option>
-                        {{/each}}
-                        {{/select}}
-                    </select>
-                </td>
-            </tr>
-        </table>
-        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
-    </div>
+    {{!-- Item Sheet Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item active" data-tab="description">Descrição</a>
+        <a class="item" data-tab="details">Detalhes</a>
+        {{!-- <a class="item" data-tab="encantos">Encantos</a> --}}
+        {{!-- <a class="item" data-tab="effects">Efeitos</a> --}}
+    </nav>
+
+    <section class="sheet-body">
+        {{!-- Description Tab --}}
+        {{> "systems/imperiodejade/templates/item/parts/item-description.hbs"}}
+
+        {{!-- Details Tab --}}
+        <div class="tab details" data-group="primary" data-tab="details">
+            <div class="form-group">
+                <label>Tipo</label>
+				<div class="form-fields">
+					<select class="selectatr" name="data.tipoArma">
+						{{#select data.tipoArma}}
+						{{#each config.tipoArma as |name type|}}
+						<option value="{{type}}">{{name}}</option>
+						{{/each}}
+						{{/select}}
+					</select>
+				</div>
+            </div>
+
+			<div class="form-group">
+				<label>Custo (PM)</label>
+				<div class="form-fields">
+					<input type="number" name="data.custo" value="{{data.custo}}" data-dtype="Number"/>
+				</div>
+			</div>
+			
+            {{!-- Weapon Properties --}}
+            <div class="form-group stacked weapon-properties">
+                <label>Propriedades</label>
+                {{#each config.weaponProperties as |name prop|}}
+                <label class="checkbox">
+                    <input type="checkbox" name="data.propriedades.{{prop}}" value="{{name}}" {{checked (lookup ../data.propriedades prop)}} data-dtype="Boolean" /> {{ name }}
+                </label>
+                {{/each}}
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+				<label>Ataque: 1d20+</label>
+				<div class="form-fields">
+					<select class="selectatr" name="data.atrAtq" value={{data.atrAtq}} title="Alterar Atributo do Ataque" data-type="String">
+						{{#select data.atrAtq}}
+						{{#if npc}}<option value="0">Nenhum</option>
+						{{else}}<option value="0">Padrão</option>{{/if}}
+						{{#each config.atributos as |atr key|}}
+						<option value="{{key}}">{{atr}}</option>
+						{{/each}}
+						{{/select}}
+					</select>
+					<select class="selectatr" name="data.pericia" value={{data.pericia}} data-type="String">
+					  {{#select data.pericia}}
+					  {{#if npc}}<option value="0">Nenhum</option>{{/if}}
+					  <option value="lut">Luta</option>
+					  <option value="pon">Pontaria</option>
+					  <option value="atu">Atuação</option>
+					  {{/select}}
+					</select>
+					<input type="text" title="Bônus" name="data.atqBns" value="{{#ifEquals data.atqBns ''}}0{{else}}{{data.atqBns}}{{/ifEquals}}" data-dtype="String"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Dano: </label>
+				<div class="form-fields">
+					<input type="text" title="Dados de Dano" name="data.dano" value="{{data.dano}}" data-dtype="String"  placeholder="ex: 1d6" />
+					<select class="selectatr" name="data.atrDan" value={{data.atrDan}} data-type="String">
+						{{#select data.atrDan}}
+						<option value="0">Nenhum</option>
+						{{#each config.atributos as |atr key|}}
+						<option value="{{key}}">{{atr}}</option>
+						{{/each}}
+						{{/select}}
+					</select>
+					<input type="text" title="Bônus" name="data.danoBns" value="{{data.danoBns}}" data-dtype="String"  placeholder="ex.: +2 , +1d6+2"/>
+					<input type="text" title="Tipo de Dano" name="data.tipo" value="{{data.tipo}}" data-dtype="String" placeholder="Tipo" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Crítico</label>
+				<div class="form-fields">
+					<input type="number" title="Margem de Ameaça" name="data.criticoM" value="{{data.criticoM}}" data-dtype="Number" min="1" max="20" placeholder="ex.: 19"/>
+					<input type="number" title="Multiplicador" name="data.criticoX" value="{{data.criticoX}}" data-dtype="Number" min="2" placeholder="2" />
+				</div>
+			</div>
+			{{#if (or data.propriedades.arremesso data.propriedades.ataqueDistancia)}}
+			<div class="form-group">
+				<label>Alcance</label>
+				<div class="form-fields">
+					<select class="selectatr" name="data.alcance" value={{data.alcance}} data-type="String">
+						{{#select data.alcance}}
+						<option value="">Nenhum</option>
+						<option value="Curto">Curto</option>
+						<option value="Médio">Médio</option>
+						<option value="Longo">Longo</option>
+						{{/select}}
+					</select>
+				</div>
+			</div>
+			{{/if}}
+			<hr>
+			<div class="form-group">
+				<label for="chatFlavor">ChatFlavor</label>
+				<textarea name="data.chatFlavor" contenteditable="true">{{data.chatFlavor}}</textarea>
+			</div>
+        </div>
+    </section>
 </form>
