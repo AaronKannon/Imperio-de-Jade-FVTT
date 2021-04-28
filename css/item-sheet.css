@@ -10,6 +10,9 @@
 .idj.sheet.item .sheet-body .editor {
   height: 100%;
 }
+.idj.sheet.item .sheet-body .item-description {
+  height: 100%;
+}
 .idj.sheet.item .sheet-body .item-properties {
   flex: 0 0 120px;
   margin: 5px 5px 5px 0;
@@ -60,7 +63,7 @@
   background: rgba(0, 0, 0, 0.05);
   text-align: center;
 }
-.idj.sheet.item .weapon-properties label .checkbox {
+.idj.sheet.item .sheet-body .checkbox {
   flex: 0 0 115px;
 }
 .idj.sheet.item .tox .tox-editor-container {
