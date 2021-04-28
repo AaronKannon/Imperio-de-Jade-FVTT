@@ -57,13 +57,9 @@ export function registerHandlebarsHelpers() {
 	
   Handlebars.registerHelper('add', (a, b) => a + b);
 	
-	Handlebars.registerHelper('divide', (a, b) => {
-    return a / b;
-  });
+	Handlebars.registerHelper('divide', (a, b) => a / b);
 
-  Handlebars.registerHelper('multiply', (a, b) => {
-    return a * b;
-  });
+  Handlebars.registerHelper('multiply', (a, b) => a * b);
 
   Handlebars.registerHelper("find", function (arr, key, value) {
     return arr.find(i => i[key] == value) ? true : false;

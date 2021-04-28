@@ -8,77 +8,77 @@
         flex-direction: column;
     }
     .sheet-body {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        .editor {
-            height: 100%;
-        }
-        .item-properties {
-          flex: 0 0 120px;
-          margin: 5px 5px 5px 0;
-          padding-right: 5px;
-          border-right: 2px groove #eeede0;
-          .form-group {
-            margin: 0;
-            border-bottom: 1px solid @faint-color;
-            color: @primary-color;
-            font-size: 13px;
-            label {
-              font-weight: 600;
-              line-height: 20px;
-            }
-            input {
-              flex: 0 0 45px;
-              text-align: right;
-              background: none;
-              height: 16px;
-              &:hover {
-                border: 1px solid #111;
-                box-shadow: 0 0 8px red;
-              }
-              &:disabled:hover {
-                border: 0px solid transparent;
-                box-shadow: none;
-                outline: none;
-              }
-              &[type="text"] {
-                border: none;
-                padding: 0 6px;
-                color: #111;
-              }
-            }
-            ul {
-              list-style: none;
-              padding: 0;
-            }
-            li {
-              margin: 0 0 2px 0;
-              border: 1px solid @faint-color;
-              border-radius: 5px;
-              font-size: 11px;
-              line-height: 16px;
-              padding: 0 2px;
-              background: @faintest-color;
-              text-align: center;
-            }
-          }
-        }
-        .weapon-properties {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .editor {
+          height: 100%;
+      }
+      .item-properties {
+        flex: 0 0 120px;
+        margin: 5px 5px 5px 0;
+        padding-right: 5px;
+        border-right: 2px groove #eeede0;
+        .form-group {
+          margin: 0;
+          border-bottom: 1px solid @faint-color;
+          color: @primary-color;
+          font-size: 13px;
           label {
-            .checkbox {
-              flex: 0 0 115px;
+            font-weight: 600;
+            line-height: 20px;
+          }
+          input {
+            flex: 0 0 45px;
+            text-align: right;
+            background: none;
+            height: 16px;
+            &:hover {
+              border: 1px solid #111;
+              box-shadow: 0 0 8px red;
+            }
+            &:disabled:hover {
+              border: 0px solid transparent;
+              box-shadow: none;
+              outline: none;
+            }
+            &[type="text"] {
+              border: none;
+              padding: 0 6px;
+              color: #111;
             }
           }
         }
-    }
-    .tox {
-        .tox-editor-container {
-          background: white;
-        }
-      
-        .tox-edit-area {
-          padding: 0 8px;
+        .properties-list {
+          list-style: none;
+          padding: 0;
+          li {
+            margin: 0 0 2px 0;
+            border: 1px solid @faint-color;
+            border-radius: 5px;
+            font-size: 11px;
+            line-height: 16px;
+            padding: 0 2px;
+            background: @faintest-color;
+            text-align: center;
+          }
         }
       }
+    }
+    .weapon-properties {
+      label {
+        .checkbox {
+          flex: 0 0 115px;
+        }
+      }
+    }
+    .tox {
+      .tox-editor-container {
+        background: white;
+      }
+      
+      .tox-edit-area {
+        padding: 0 8px;
+      }
+    }
 }

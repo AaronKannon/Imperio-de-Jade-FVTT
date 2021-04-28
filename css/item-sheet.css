@@ -46,11 +46,11 @@
   padding: 0 6px;
   color: #111;
 }
-.idj.sheet.item .sheet-body .item-properties .form-group ul {
+.idj.sheet.item .sheet-body .item-properties .properties-list {
   list-style: none;
   padding: 0;
 }
-.idj.sheet.item .sheet-body .item-properties .form-group li {
+.idj.sheet.item .sheet-body .item-properties .properties-list li {
   margin: 0 0 2px 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -60,7 +60,7 @@
   background: rgba(0, 0, 0, 0.05);
   text-align: center;
 }
-.idj.sheet.item .sheet-body .weapon-properties label .checkbox {
+.idj.sheet.item .weapon-properties label .checkbox {
   flex: 0 0 115px;
 }
 .idj.sheet.item .tox .tox-editor-container {
