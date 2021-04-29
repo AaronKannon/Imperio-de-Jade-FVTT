@@ -42,7 +42,26 @@
         "tipoArma": {
             "simples": "Simples",
             "marcial": "Marcial",
-            "exotica": "Exótica"
+            "exotica": "Exótica",
+            "natural": "Natural",
+            "improvisada": "Improvisada"
+        },
+        "atributos": {
+            "for": "Força",
+            "des": "Destreza",
+            "con": "Constituição",
+            "int": "Inteligência",
+            "sab": "Sabedoria",
+            "car": "Carisma",
+            "hon": "Honra"
+        },
+        "atributosAbr": {
+            "for": "For",
+            "des": "Des",
+            "con": "Con",
+            "int": "Int",
+            "sab": "Sab",
+            "car": "Car"
         }
     },
     "ACTOR.TypeCharacter": "Personagem de Jogador",

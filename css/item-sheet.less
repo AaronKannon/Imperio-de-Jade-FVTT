@@ -1,83 +1,96 @@
+@font-face {
+  font-family: "Gang of Three";
+  src: url("../assets/gangofthree.ttf");
+}
+
 @faint-color: rgba(0,0,0,.1);
 @primary-color: rgba(25,24,19,1);
 @faintest-color: rgba(0,0,0,.05);
 
 .idj.sheet.item {
-    form {
-        display: flex;
-        flex-direction: column;
+  .sheet-tabs {
+    a {
+      font-family: "Gang of Three";
     }
-    .sheet-body {
-      height: 100%;
+  }
+  .charname {
+    font-family: "Gang of Three";
+  }
+  form {
       display: flex;
       flex-direction: column;
-      .editor {
-          height: 100%;
-      }
-      .item-description {
+  }
+  .sheet-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .editor {
         height: 100%;
-      }
-      .item-properties {
-        flex: 0 0 120px;
-        margin: 5px 5px 5px 0;
-        padding-right: 5px;
-        border-right: 2px groove #eeede0;
-        .form-group {
-          margin: 0;
-          border-bottom: 1px solid @faint-color;
-          color: @primary-color;
-          font-size: 13px;
-          label {
-            font-weight: 600;
-            line-height: 20px;
-          }
-          input {
-            flex: 0 0 45px;
-            text-align: right;
-            background: none;
-            height: 16px;
-            &:hover {
-              border: 1px solid #111;
-              box-shadow: 0 0 8px red;
-            }
-            &:disabled:hover {
-              border: 0px solid transparent;
-              box-shadow: none;
-              outline: none;
-            }
-            &[type="text"] {
-              border: none;
-              padding: 0 6px;
-              color: #111;
-            }
-          }
+    }
+    .item-description {
+      height: 100%;
+    }
+    .item-properties {
+      flex: 0 0 120px;
+      margin: 5px 5px 5px 0;
+      padding-right: 5px;
+      border-right: 2px groove #eeede0;
+      .form-group {
+        margin: 0;
+        border-bottom: 1px solid @faint-color;
+        color: @primary-color;
+        font-size: 13px;
+        label {
+          font-weight: 600;
+          line-height: 20px;
         }
-        .properties-list {
-          list-style: none;
-          padding: 0;
-          li {
-            margin: 0 0 2px 0;
-            border: 1px solid @faint-color;
-            border-radius: 5px;
-            font-size: 11px;
-            line-height: 16px;
-            padding: 0 2px;
-            background: @faintest-color;
-            text-align: center;
+        input {
+          flex: 0 0 45px;
+          text-align: right;
+          background: none;
+          height: 16px;
+          &:hover {
+            border: 1px solid #111;
+            box-shadow: 0 0 8px red;
+          }
+          &:disabled:hover {
+            border: 0px solid transparent;
+            box-shadow: none;
+            outline: none;
+          }
+          &[type="text"] {
+            border: none;
+            padding: 0 6px;
+            color: #111;
           }
         }
       }
-      .checkbox {
-        flex: 0 0 115px;
+      .properties-list {
+        list-style: none;
+        padding: 0;
+        li {
+          margin: 0 0 2px 0;
+          border: 1px solid @faint-color;
+          border-radius: 5px;
+          font-size: 11px;
+          line-height: 16px;
+          padding: 0 2px;
+          background: @faintest-color;
+          text-align: center;
+        }
       }
     }
-    .tox {
-      .tox-editor-container {
-        background: white;
-      }
-      
-      .tox-edit-area {
-        padding: 0 8px;
-      }
+    .checkbox {
+      flex: 0 0 115px;
     }
+  }
+  .tox {
+    .tox-editor-container {
+      background: white;
+    }
+    
+    .tox-edit-area {
+      padding: 0 8px;
+    }
+  }
 }

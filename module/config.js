@@ -45,7 +45,9 @@ idj.tipodano = {
 idj.tipoArma = {
     simples: "idj.tipoArma.simples",
     marcial: "idj.tipoArma.marcial",
-    exotica: "idj.tipoArma.exotica"
+    exotica: "idj.tipoArma.exotica",
+    natural: "idj.tipoArma.natural",
+    improvisada: "idj.tipoArma.improvisada"
 }
 
 idj.weaponProperties = {
@@ -60,3 +62,27 @@ idj.weaponProperties = {
     "municao": "Munição",
     "versatil": "Versátil"
   };
+
+idj.atributos = {
+    "for": "idj.atributos.for",
+    "des": "idj.atributos.des",
+    "con": "idj.atributos.con",
+    "int": "idj.atributos.int",
+    "sab": "idj.atributos.sab",
+    "car": "idj.atributos.car",
+    "hon": "idj.atributos.hon"
+};
+
+idj.atributosAbr = {
+    "for": "idj.atributosAbr.for",
+    "des": "idj.atributosAbr.des",
+    "con": "idj.atributosAbr.con",
+    "int": "idj.atributosAbr.int",
+    "sab": "idj.atributosAbr.sab",
+    "car": "idj.atributosAbr.car"
+};
+
+idj.atributosAtq = {
+    "for": "idj.atributos.for",
+    "des": "idj.atributos.des"
+};

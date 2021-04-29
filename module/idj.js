@@ -17,12 +17,12 @@ import { registerHandlebarsHelpers } from "./handlebars.js";
 
     // Localize CONFIG objects once up-front
     const toLocalize = [
-      "tipoArma"
+      "tipoArma", "atributos", "atributosAbr", "atributosAtq"
     ];
   
     // Exclude some from sorting where the default order matters
     const noSort = [
-        "tipoArma"
+        "tipoArma", "atributos", "atributosAbr", "atributosAtq"
     ];
   
     // Localize and sort CONFIG objects

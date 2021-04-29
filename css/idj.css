@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Gang of Three";
+  src: url("../assets/gangofthree.ttf");
+}
+.idj.sheet.item .sheet-tabs a {
+  font-family: "Gang of Three";
+}
+.idj.sheet.item .charname {
+  font-family: "Gang of Three";
+}
 .idj.sheet.item form {
   display: flex;
   flex-direction: column;
