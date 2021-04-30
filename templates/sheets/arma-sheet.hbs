@@ -56,7 +56,7 @@
 						{{#select data.atrAtq}}
 						{{#if npc}}<option value="0">Nenhum</option>
 						{{else}}<option value="0">Padrão</option>{{/if}}
-						{{#each config.atributosAtq as |atr key|}}
+						{{#each config.atributos as |atr key|}}
 						<option value="{{key}}">{{atr}}</option>
 						{{/each}}
 						{{/select}}
@@ -94,7 +94,7 @@
 					<input type="number" title="Multiplicador" name="data.criticoX" value="{{data.criticoX}}" data-dtype="Number" min="2" placeholder="2" />
 				</div>
 			</div>
-			{{#if (or data.propriedades.arremesso data.propriedades.ataqueDistancia)}}
+			{{#if (or data.propriedades.arremesso data.propriedades.disparo)}}
 			<div class="form-group">
 				<label>Alcance</label>
 				<div class="form-fields">

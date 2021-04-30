@@ -51,16 +51,13 @@ idj.tipoArma = {
 }
 
 idj.weaponProperties = {
-    "adaptavel": "Adaptável",
-    "agil": "Ágil",
-    "alongada": "Alongada",
+    "acuidade": "Acuidade com Arma",
+    "armahaste": "Arma de Haste",
+    "armadupla": "Arma Dupla",
     "arremesso": "Arremesso",
-    "ataqueDistancia": "Ataque à Distância",
     "duasMaos": "Duas Mãos",
-    "dupla": "Dupla",
-    "leve": "Leve",
-    "municao": "Munição",
-    "versatil": "Versátil"
+    "disparo": "Disparo",
+    "leve": "Leve"
   };
 
 idj.atributos = {
@@ -80,9 +77,4 @@ idj.atributosAbr = {
     "int": "idj.atributosAbr.int",
     "sab": "idj.atributosAbr.sab",
     "car": "idj.atributosAbr.car"
-};
-
-idj.atributosAtq = {
-    "for": "idj.atributos.for",
-    "des": "idj.atributos.des"
 };

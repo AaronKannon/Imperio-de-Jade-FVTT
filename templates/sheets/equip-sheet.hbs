@@ -1,0 +1,54 @@
+<form class="{{cssClass}}" autocomplete="off">
+	{{!-- Item Sheet Header --}}
+    {{> "systems/imperiodejade/templates/item/parts/item-header.hbs"}}
+	
+	{{!-- Item Sheet Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item active" data-tab="description">Descrição</a>
+        <a class="item" data-tab="details">Detalhes</a>
+    </nav>
+
+	{{!-- Item Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        {{> "systems/imperiodejade/templates/item/parts/item-description.hbs"}}
+
+        {{!-- Details Tab --}}
+        <div class="tab details" data-group="primary" data-tab="details">
+            {{!-- Equipment Type --}}
+            <div class="form-group">
+                <label>Tipo</label>
+                <select name="data.tipo">
+                    {{#select data.tipo}}
+                    <option value="leve">Armadura Leve</option>
+                    <option value="media">Armadura Média</option>
+                    <option value="pesada">Armadura Pesada</option>
+                    <option value="escudo">Escudo</option>
+                    <option value="traje">Traje</option>
+                    <option value="bonus">Bônus Mágico</option>
+                    <option value="natural">Armadura Natural</option>
+                    <option value="acessorio">Acessório</option>
+                    {{/select}}
+                </select>
+            </div>
+            {{!-- CA --}}
+            <div class="form-group">
+                <label>Bônus na CA</label>
+                   <input type="number" name="data.armadura.value" value="{{data.armadura.value}}" data-dtype="Number"/>
+            </div>
+
+            {{!-- Bônus Maximo de Armadura --}}
+            <div class="form-group">
+                <label>Bônus Maximo de Armadura</label>
+                   <input type="number" name="data.armadura.bonusarmadura" value="{{data.armadura.bonusarmadura}}" data-dtype="Number"/>
+            </div>
+
+            {{!-- Penalidade de Armadura --}}
+            <div class="form-group">
+                <label>Penalidade de Armadura</label>
+                <input type="number" name="data.armadura.penalidade" value="{{data.armadura.penalidade}}" data-dtype="Number" max="0"/>
+            </div>
+        </div>
+    </section>
+</form>
