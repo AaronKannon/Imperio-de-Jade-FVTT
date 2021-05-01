@@ -23,7 +23,8 @@
 		{{/each}}
 		{{/if}}
 		{{#if (eq item.type "equip")}}
-			{{#if item.data.armadura.value}}<li>Defesa: {{item.data.armadura.value}}</li>{{/if}}
+			{{#if item.data.armadura.value}}<li>CA: {{item.data.armadura.value}}</li>{{/if}}
+			{{#if item.data.armadura.bonusarmadura}}<li>Bônus de Armadura: {{item.data.armadura.bonusarmadura}}</li>{{/if}}
 			{{#if item.data.armadura.penalidade}}<li>Penalidade: {{item.data.armadura.penalidade}}</li>{{/if}}
 		{{/if}}
 		{{#if (eq item.type "talento")}}

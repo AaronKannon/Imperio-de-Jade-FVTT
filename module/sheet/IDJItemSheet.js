@@ -15,8 +15,11 @@ export default class IDJItemSheet extends ItemSheet {
 
     getData() {
         const data = super.getData();
-
         data.config = CONFIG.idj;
+
+        if (data.item.type == "classe") {
+			data.isGM = game.user.isGM;
+		}
 
         return data;
     }

@@ -1,6 +1,6 @@
 import { idj } from "./config.js";
 import IDJItemSheet from "./sheet/IDJItemSheet.js";
-//import IDJActorSheet from "./module/sheet/IDJActorSheet.js";
+import IDJActorSheet from "./sheet/IDJActorSheet.js";
 
 //Carregando Templates para modularidade
 import { preloadHandlebarsTemplates } from "./templates.js";
@@ -17,12 +17,12 @@ import { registerHandlebarsHelpers } from "./handlebars.js";
 
     // Localize CONFIG objects once up-front
     const toLocalize = [
-      "tipoArma", "atributos", "atributosAbr", "atributosAtq"
+      "tipoArma", "atributos", "atributosAbr", "atributosAtq", "pericias"
     ];
   
     // Exclude some from sorting where the default order matters
     const noSort = [
-        "tipoArma", "atributos", "atributosAbr", "atributosAtq"
+        "tipoArma", "atributos", "atributosAbr", "atributosAtq", "pericias"
     ];
   
     // Localize and sort CONFIG objects
@@ -44,6 +44,9 @@ Hooks.once("init", function () {
 
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("idj", IDJItemSheet, { makeDefault: true });
+    
+    Actors.unregisterSheet("core", ActorSheet);
+    Actors.registerSheet("idj", IDJActorSheet, { makeDefault: true });
 
     preloadHandlebarsTemplates();
     registerHandlebarsHelpers();

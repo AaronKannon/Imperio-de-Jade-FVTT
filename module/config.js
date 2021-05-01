@@ -78,3 +78,6 @@ idj.atributosAbr = {
     "sab": "idj.atributosAbr.sab",
     "car": "idj.atributosAbr.car"
 };
+
+idj.pvPorNivel = [2, 3, 4, 5, 6];
+idj.pmPorNivel = [2, 3, 4];
