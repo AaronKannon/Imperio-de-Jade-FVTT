@@ -62,6 +62,15 @@
             "int": "Int",
             "sab": "Sab",
             "car": "Car"
+        },
+        "weaponProperties": {
+            "acuidade": "Acuidade com Arma",
+            "armahaste": "Arma de Haste",
+            "armadupla": "Arma Dupla",
+            "arremesso": "Arremesso",
+            "duasMaos": "Duas Mãos",
+            "disparo": "Disparo",
+            "leve": "Leve"
         }
     },
     "ACTOR.TypeCharacter": "Personagem de Jogador",

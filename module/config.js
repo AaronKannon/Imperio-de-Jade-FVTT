@@ -9,12 +9,12 @@ idj.pericias = {
     conhecimento: "idj.pericias.conhecimento",
     cura: "idj.pericias.cura",
     diplomacia: "idj.pericias.diplomacia",
-    enganacao: "idj.pericias.enganação",
+    enganacao: "idj.pericias.enganacao",
     furtividade: "idj.pericias.furtividade",
     identificar_magia: "idj.pericias.identificar_magia",
     iniciativa: "idj.pericias.iniciativa",
     intimidacao: "idj.pericias.intimidacao",
-    intuicao: "idj.pericias.intuição",
+    intuicao: "idj.pericias.intuicao",
     ladinagem: "idj.pericias.ladinagem",
     obter_informacao: "idj.pericias.obter_informacao",
     oficios: "idj.pericias.oficios",
@@ -51,14 +51,14 @@ idj.tipoArma = {
 }
 
 idj.weaponProperties = {
-    "acuidade": "Acuidade com Arma",
-    "armahaste": "Arma de Haste",
-    "armadupla": "Arma Dupla",
-    "arremesso": "Arremesso",
-    "duasMaos": "Duas Mãos",
-    "disparo": "Disparo",
-    "leve": "Leve"
-  };
+    "acuidade": "idj.weaponProperties.acuidade",
+    "armahaste": "idj.weaponProperties.armahaste",
+    "armadupla": "idj.weaponProperties.armadupla",
+    "arremesso": "idj.weaponProperties.arremesso",
+    "duasMaos": "idj.weaponProperties.duasMaos",
+    "disparo": "idj.weaponProperties.disparo",
+    "leve": "idj.weaponProperties.leve"
+};
 
 idj.atributos = {
     "for": "idj.atributos.for",
