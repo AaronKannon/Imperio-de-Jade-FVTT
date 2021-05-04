@@ -31,17 +31,6 @@ idj.arma = {
     tipodano: "idj.arma.tipodano"
 }
 
-idj.tipoataque = {
-    corpoacorpo: "idj.tipoataque.corpoacorpo",
-    adistancia: "idj.tipoataque.adistancia"
-}
-
-idj.tipodano = {
-    esmagamento: "idj.tipodano.esmagamento",
-    perfuracao: "idj.tipodano.perfuracao",
-    corte: "idj.tipodano.corte"
-}
-
 idj.tipoArma = {
     simples: "idj.tipoArma.simples",
     marcial: "idj.tipoArma.marcial",
@@ -59,6 +48,17 @@ idj.weaponProperties = {
     "disparo": "idj.weaponProperties.disparo",
     "leve": "idj.weaponProperties.leve"
 };
+
+idj.tipoataque = {
+    corpoacorpo: "idj.tipoataque.corpoacorpo",
+    adistancia: "idj.tipoataque.adistancia"
+}
+
+idj.tipodano = {
+    esmagamento: "idj.tipodano.esmagamento",
+    perfuracao: "idj.tipodano.perfuracao",
+    corte: "idj.tipodano.corte"
+}
 
 idj.atributos = {
     "for": "idj.atributos.for",
