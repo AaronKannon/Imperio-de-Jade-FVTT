@@ -73,6 +73,11 @@
   background: rgba(0, 0, 0, 0.05);
   text-align: center;
 }
+.idj.sheet.item .sheet-body .traits-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .idj.sheet.item .sheet-body .checkbox {
   flex: 0 0 115px;
 }
@@ -81,4 +86,13 @@
 }
 .idj.sheet.item .tox .tox-edit-area {
   padding: 0 8px;
+}
+.idj.sheet.item .tag {
+  display: inline-block;
+  padding: 0 3px;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
 }

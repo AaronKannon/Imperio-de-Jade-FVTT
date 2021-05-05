@@ -20,8 +20,8 @@ export default class IDJItemSheet extends ItemSheet {
         data.config = CONFIG.idj;
 
         if (data.item.type == "classe") {
-			data.isGM = game.user.isGM;
-		}
+			    data.isGM = game.user.isGM;
+		    }
 
         return data;
     }
