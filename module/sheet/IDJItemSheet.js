@@ -11,8 +11,19 @@ export default class IDJItemSheet extends ItemSheet {
 		});
     }
     
+    //get template() {
+    //    return `systems/imperiodejade/templates/sheets/${this.item.data.type}-sheet.hbs`;
+    //}
+
     get template() {
-        return `systems/imperiodejade/templates/sheets/${this.item.data.type}-sheet.hbs`;
+      const path = "systems/imperiodejade/templates/sheets";
+      if (this.item.data.type == "consumivel" || this.item.data.type == "tesouro") {
+        return `${path}/item-sheet.hbs`;
+      }
+      else if (this.item.data.type == "armadura") {
+        return `${path}/equip-sheet.hbs`;
+      }
+      return `${path}/${this.item.data.type}-sheet.hbs`;
     }
 
     getData() {
@@ -26,7 +37,6 @@ export default class IDJItemSheet extends ItemSheet {
         return data;
     }
 
-    /** @override */
 	activateListeners(html) {
 		super.activateListeners(html);
 		// Everything below here is only needed if the sheet is editable
