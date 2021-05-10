@@ -79,5 +79,23 @@ idj.atributosAbr = {
     "car": "idj.atributosAbr.car"
 };
 
+idj.listaAtivacao = {
+    "padrao": "idj.listaAtivacao.padrao",
+    "movimento": "idj.listaAtivacao.movimento",
+    "completa": "idj.listaAtivacao.completa",
+    "reacao": "idj.listaAtivacao.reacao",
+    "livre": "idj.listaAtivacao.livre"
+};
+
+idj.listaDuracoes = {
+    "instantanea": "idj.listaDuracoes.instantanea",
+	"cena": "idj.listaDuracoes.cena",
+    "turno": "idj.listaDuracoes.turno",
+    "rodada": "idj.listaDuracoes.rodada",
+	"sustentada": "idj.listaDuracoes.sustentada",
+	"verTexto": "idj.listaDuracoes.verTexto",
+	"outra": "idj.listaDuracoes.outra"
+};
+
 idj.pvPorNivel = [2, 3, 4, 5, 6];
 idj.pmPorNivel = [2, 3, 4];

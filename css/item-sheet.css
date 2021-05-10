@@ -8,6 +8,12 @@
 .idj.sheet.item .charname {
   font-family: "Gang of Three";
 }
+.idj.sheet.item .custo {
+  font-family: "Gang of Three";
+  border: 0 !important;
+  border-bottom: 0 !important;
+  font-size: 30px;
+}
 .idj.sheet.item form {
   display: flex;
   flex-direction: column;

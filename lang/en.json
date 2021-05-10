@@ -71,6 +71,22 @@
             "duasMaos": "Duas Mãos",
             "disparo": "Disparo",
             "leve": "Leve"
+        },
+        "listaAtivacao": {
+            "padrao": "Padrão",
+            "movimento": "Movimento",
+            "completa": "Completa",
+            "reacao": "Reação",
+            "livre": "Livre"
+        },
+        "listaDuracoes": {
+            "instantanea": "Instantânea",
+            "cena": "Cena",
+            "turno": "Turno",
+            "rodada": "Rodada",
+            "sustentada": "Sustentada",
+            "verTexto": "Ver Texto",
+            "outra": "Outra"
         }
     },
     "ACTOR.TypeCharacter": "Personagem de Jogador",
