@@ -40,13 +40,13 @@ idj.tipoArma = {
 }
 
 idj.weaponProperties = {
-    "acuidade": "idj.weaponProperties.acuidade",
-    "armahaste": "idj.weaponProperties.armahaste",
-    "armadupla": "idj.weaponProperties.armadupla",
-    "arremesso": "idj.weaponProperties.arremesso",
-    "duasMaos": "idj.weaponProperties.duasMaos",
-    "disparo": "idj.weaponProperties.disparo",
-    "leve": "idj.weaponProperties.leve"
+    acuidade: "idj.weaponProperties.acuidade",
+    armahaste: "idj.weaponProperties.armahaste",
+    armadupla: "idj.weaponProperties.armadupla",
+    arremesso: "idj.weaponProperties.arremesso",
+    duasMaos: "idj.weaponProperties.duasMaos",
+    disparo: "idj.weaponProperties.disparo",
+    leve: "idj.weaponProperties.leve"
 };
 
 idj.tipoataque = {
@@ -61,40 +61,49 @@ idj.tipodano = {
 }
 
 idj.atributos = {
-    "for": "idj.atributos.for",
-    "des": "idj.atributos.des",
-    "con": "idj.atributos.con",
-    "int": "idj.atributos.int",
-    "sab": "idj.atributos.sab",
-    "car": "idj.atributos.car",
-    "hon": "idj.atributos.hon"
+    for: "idj.atributos.for",
+    des: "idj.atributos.des",
+    con: "idj.atributos.con",
+    int: "idj.atributos.int",
+    sab: "idj.atributos.sab",
+    car: "idj.atributos.car",
+    hon: "idj.atributos.hon"
 };
 
 idj.atributosAbr = {
-    "for": "idj.atributosAbr.for",
-    "des": "idj.atributosAbr.des",
-    "con": "idj.atributosAbr.con",
-    "int": "idj.atributosAbr.int",
-    "sab": "idj.atributosAbr.sab",
-    "car": "idj.atributosAbr.car"
+    for: "idj.atributosAbr.for",
+    des: "idj.atributosAbr.des",
+    con: "idj.atributosAbr.con",
+    int: "idj.atributosAbr.int",
+    sab: "idj.atributosAbr.sab",
+    car: "idj.atributosAbr.car"
 };
 
 idj.listaAtivacao = {
-    "padrao": "idj.listaAtivacao.padrao",
-    "movimento": "idj.listaAtivacao.movimento",
-    "completa": "idj.listaAtivacao.completa",
-    "reacao": "idj.listaAtivacao.reacao",
-    "livre": "idj.listaAtivacao.livre"
+    padrao: "idj.listaAtivacao.padrao",
+    movimento: "idj.listaAtivacao.movimento",
+    completa: "idj.listaAtivacao.completa",
+    reacao: "idj.listaAtivacao.reacao",
+    livre: "idj.listaAtivacao.livre"
 };
 
 idj.listaDuracoes = {
-    "instantanea": "idj.listaDuracoes.instantanea",
-	"cena": "idj.listaDuracoes.cena",
-    "turno": "idj.listaDuracoes.turno",
-    "rodada": "idj.listaDuracoes.rodada",
-	"sustentada": "idj.listaDuracoes.sustentada",
-	"verTexto": "idj.listaDuracoes.verTexto",
-	"outra": "idj.listaDuracoes.outra"
+    instantanea: "idj.listaDuracoes.instantanea",
+	cena: "idj.listaDuracoes.cena",
+    turno: "idj.listaDuracoes.turno",
+    rodada: "idj.listaDuracoes.rodada",
+	sustentada: "idj.listaDuracoes.sustentada",
+	verTexto: "idj.listaDuracoes.verTexto",
+	outra: "idj.listaDuracoes.outra"
+};
+
+idj.tipoChacra = {
+    bracos: "idj.tipoChacra.bracos",
+    pernas: "idj.tipoChacra.pernas",
+    torco: "idj.tipoChacra.torco",
+    mente: "idj.tipoChacra.mente",
+    espirito: "idj.tipoChacra.espirito",
+    emocoes: "idj.tipoChacra.emocoes"
 };
 
 idj.pvPorNivel = [2, 3, 4, 5, 6];

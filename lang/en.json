@@ -87,6 +87,14 @@
             "sustentada": "Sustentada",
             "verTexto": "Ver Texto",
             "outra": "Outra"
+        },
+        "tipoChacra": {
+            "bracos": "Chacra dos Braços",
+            "pernas": "Chacra das Pernas",
+            "torco": "Chacra do Torço",
+            "mente": "Chacra da Mente",
+            "espirito": "Chacra do Espírito",
+            "emocoes": "Chacra das Emoções"
         }
     },
     "ACTOR.TypeCharacter": "Personagem de Jogador",

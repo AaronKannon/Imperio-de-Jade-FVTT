@@ -25,12 +25,12 @@ Hooks.once("setup", function() {
   // Localize CONFIG objects once up-front
   const toLocalize = [
     "tipoArma", "atributos", "atributosAbr",
-    "pericias", "weaponProperties", "listaAtivacao", "listaDuracoes"
+    "pericias", "weaponProperties", "listaAtivacao", "listaDuracoes", "tipoChacra"
   ];
 
   // Exclude some from sorting where the default order matters
   const noSort = [
-      "tipoArma", "atributos", "atributosAbr", "pericias", "listaAtivacao", "listaDuracoes"
+      "tipoArma", "atributos", "atributosAbr", "pericias", "listaAtivacao", "listaDuracoes", "tipoChacra"
   ];
 
   // Localize and sort CONFIG objects
