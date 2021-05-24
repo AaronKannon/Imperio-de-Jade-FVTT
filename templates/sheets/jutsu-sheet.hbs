@@ -18,12 +18,9 @@
                     <label>Chacra</label>
                     <select class="selectatr" name="data.tipoChacra" value={{data.tipoChacra}} data-type="Number">
                         {{#select data.tipo}}
-                        <option value="bracos">Braços (For)</option>
-						<option value="pernas">Pernas (Des)</option>
-						<option value="torco">Torço (Con)</option>
-						<option value="mente">Mente (Int)</option>
-						<option value="espirito">Espírito (Sab)</option>
-						<option value="emocoes">Emoções (Car)</option>
+						{{#each config.tipoChacra as |name tipo|}}
+                        <option value="{{tipo}}">{{name}}</option>
+						{{/each}}
                         {{/select}}
                     </select>
 			</div>
