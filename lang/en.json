@@ -95,6 +95,13 @@
             "mente": "Chacra da Mente",
             "espirito": "Chacra do Espírito",
             "emocoes": "Chacra das Emoções"
+        },
+        "grauJutsu": {
+            "basico": "Básico",
+            "mediano": "Mediano",
+            "avancado": "Avançado",
+            "sublime": "Sublime",
+            "lendario": "Lendário"
         }
     },
     "ACTOR.TypeCharacter": "Personagem de Jogador",

@@ -342,7 +342,7 @@
         "jutsu": {
           "templates": ["base","aprimoramento", "efeitoAtivado", "resistencia"],
           "tipoChacra": "",
-          "circulo": 1,
+          "grau": "basico",
           "preparada": false,
           "escola": "",
           "efeito": "",

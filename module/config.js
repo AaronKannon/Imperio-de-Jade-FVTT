@@ -106,5 +106,13 @@ idj.tipoChacra = {
     emocoes: "idj.tipoChacra.emocoes"
 };
 
+idj.grauJutsu = {
+    basico: "idj.grauJutsu.basico",
+    mediano: "idj.grauJutsu.mediano",
+    avancado: "idj.grauJutsu.avancado",
+    sublime: "idj.grauJutsu.sublime",
+    lendario: "idj.grauJutsu.lendario"
+};
+
 idj.pvPorNivel = [2, 3, 4, 5, 6];
 idj.pmPorNivel = [2, 3, 4];

@@ -16,23 +16,21 @@
 		<div class="tab details" data-group="primary" data-tab="details">
 			<div class="form-group">
                     <label>Chacra</label>
-                    <select class="selectatr" name="data.tipoChacra" value={{data.tipoChacra}} data-type="Number">
-                        {{#select data.tipo}}
-						{{#each config.tipoChacra as |name tipo|}}
-                        <option value="{{tipo}}">{{name}}</option>
+                    <select class="selectatr" name="data.tipoChacra" value={{data.tipoChacra}}>
+                        {{#select data.tipoChacra}}
+						{{#each config.tipoChacra as |name tipoChacra|}}
+                        <option value="{{tipoChacra}}">{{name}}</option>
 						{{/each}}
                         {{/select}}
                     </select>
 			</div>
             <div class="form-group">
 				<label>Circulo</label>
-				<select class="selectatr" name="data.circulo" value={{data.circulo}} data-type="Number">
-					{{#select data.circulo}}
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+				<select class="selectatr" name="data.grau" value={{data.grau}}>
+					{{#select data.grau}}
+					{{#each config.grauJutsu as |name nivel|}}
+					<option value="{{nivel}}">{{name}}</option>
+					{{/each}}
 					{{/select}}
 				</select>
 			</div>
@@ -51,6 +49,7 @@
 					{{/select}}
 				</select>
             </div>
+			<!--Colocar a escolha de elemento aqui-->
 			
 			<hr>
 			
