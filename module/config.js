@@ -114,5 +114,32 @@ idj.grauJutsu = {
     lendario: "idj.grauJutsu.lendario"
 };
 
+idj.tipoChacraAttr = {
+    bracos: "idj.atributos.for",
+    pernas: "idj.atributos.des",
+    torco: "idj.atributos.con",
+    mente: "idj.atributos.int",
+    espirito: "idj.atributos.sab",
+    emocoes: "idj.atributos.car"
+};
+
+idj.jutsuDescritores = {
+    abjuracao: "idj.jutsuDescritores.abjuracao",
+    adivinhacao: "idj.jutsuDescritores.adivinhacao",
+    acido: "idj.jutsuDescritores.acido",
+    eletricidade: "idj.jutsuDescritores.eletricidade",
+    fogo: "idj.jutsuDescritores.fogo",
+    frio: "idj.jutsuDescritores.frio",
+    vento: "idj.jutsuDescritores.vento",
+    encantamento: "idj.jutsuDescritores.encantamento",
+    ilusao: "idj.jutsuDescritores.ilusao",
+    invocacao: "idj.jutsuDescritores.invocacao",
+    ninja: "idj.jutsuDescritores.ninja",
+    luz: "idj.jutsuDescritores.luz",
+    transmutacao: "idj.jutsuDescritores.transmutacao",
+    trevas: "idj.jutsuDescritores.trevas",
+    vacuo: "idj.jutsuDescritores.vacuo"
+};
+
 idj.pvPorNivel = [2, 3, 4, 5, 6];
 idj.pmPorNivel = [2, 3, 4];

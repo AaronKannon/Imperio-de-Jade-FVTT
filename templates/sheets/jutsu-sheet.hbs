@@ -25,7 +25,7 @@
                     </select>
 			</div>
             <div class="form-group">
-				<label>Circulo</label>
+				<label>Grau</label>
 				<select class="selectatr" name="data.grau" value={{data.grau}}>
 					{{#select data.grau}}
 					{{#each config.grauJutsu as |name nivel|}}
@@ -34,22 +34,14 @@
 					{{/select}}
 				</select>
 			</div>
-            <div class="form-group">
-				<label>Escola</label>
-				<select class="selectatr" name="data.escola" value={{data.escola}} data-type="String">
-					{{#select data.escola}}
-					<option value="Abjuração">Abjuração</option>
-					<option value="Adivinhação">Adivinhação</option>
-					<option value="Convocação">Convocação</option>
-					<option value="Encantamento">Encantamento</option>
-					<option value="Evocação">Evocação</option>
-					<option value="Ilusão">Ilusão</option>
-					<option value="Necromancia">Necromancia</option>
-					<option value="Transmutação">Transmutação</option>
-					{{/select}}
-				</select>
+            <div class="form-group stacked">
+				<label>Descritores</label>
+				{{#each config.jutsuDescritores as |name desc|}}
+                <label class="checkbox">
+                    <input type="checkbox" name="data.descritores.{{desc}}" value="{{name}}" {{checked (lookup ../data.descritores desc)}} data-dtype="Boolean"/> {{ name }}
+                </label>
+                {{/each}}
             </div>
-			<!--Colocar a escolha de elemento aqui-->
 			
 			<hr>
 			

@@ -344,10 +344,10 @@
           "tipoChacra": "",
           "grau": "basico",
           "preparada": false,
-          "escola": "",
           "efeito": "",
           "execucao": "_deprecated",
-          "custo": "_deprecated"
+          "custo": "_deprecated",
+          "descritores": {"abjuracao":false,"adivinhacao":false,"acido":false,"eletricidade":false,"fogo":false,"frio":false,"vento":false,"encantamento":false,"ilusão":false,"invocacao":false,"ninja":false,"luz":false,"transmutação":false,"trevas":false,"vacuo":false}
         },
         "tesouro": {
           "templates": ["base","objeto"]

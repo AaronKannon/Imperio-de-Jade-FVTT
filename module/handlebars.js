@@ -64,4 +64,71 @@ export function registerHandlebarsHelpers() {
   Handlebars.registerHelper("find", function (arr, key, value) {
     return arr.find(i => i[key] == value) ? true : false;
   });
+
+  Handlebars.registerHelper("jutsuDescricao", function (descricao) {
+    let result = "";
+    let elemental = false;
+    if(descricao.acido && descricao.eletricidade && descricao.fogo && descricao.frio && descricao.vento) {
+      elemental = true;
+    }
+    if(descricao.abjuracao) {
+      result = stringVazia(result,"Abjuração");
+    }
+    if(descricao.acido && !elemental) {
+      result = stringVazia(result,"Ácido");
+    }
+    if(descricao.adivinhacao) {
+      result = stringVazia(result,"Advinhação");
+    }
+    if(elemental) {
+      result = stringVazia(result,"Elemental");
+    }
+    if(descricao.eletricidade && !elemental) {
+      result = stringVazia(result,"Eletricidade");
+    }
+    if(descricao.encantamento) {
+      result = stringVazia(result,"Encantamento");
+    }
+    if(descricao.fogo&& !elemental) {
+      result = stringVazia(result,"Fogo");
+    }
+    if(descricao.frio && !elemental) {
+      result = stringVazia(result,"Frio");
+    }
+    if(descricao.ilusao) {
+      result = stringVazia(result,"Ilusão");
+    }
+    if(descricao.invocacao) {
+      result = stringVazia(result,"Invocação");
+    }
+    if(descricao.luz) {
+      result = stringVazia(result,"Luz");
+    }
+    if(descricao.ninja) {
+      result = stringVazia(result,"Ninja");
+    }
+    if(descricao.transmutacao) {
+      result = stringVazia(result,"Transmutação");
+    }
+    if(descricao.trevas) {
+      result = stringVazia(result,"Trevas");
+    }
+    if(descricao.vacuo) {
+      result = stringVazia(result,"Vácuo");
+    }
+    if(descricao.vento && !elemental) {
+      result = stringVazia(result,"Vento");
+    }
+    return result;
+  });
+
+  function stringVazia(str,adicionar) {
+    if (str.length === 0){
+      str +=adicionar
+    }else {
+      str = str+", "+adicionar
+    }
+    return str;
+  }
+
 }

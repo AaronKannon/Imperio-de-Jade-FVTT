@@ -102,6 +102,23 @@
             "avancado": "Avançado",
             "sublime": "Sublime",
             "lendario": "Lendário"
+        },
+        "jutsuDescritores": {
+            "abjuracao": "Abjuração",
+            "adivinhacao": "Adivinhação",
+            "acido": "Ácido",
+            "eletricidade": "Eletricidade",
+            "fogo": "Fogo",
+            "frio": "Frio",
+            "vento": "Vento",
+            "encantamento": "Encantamento",
+            "ilusao": "Ilusão",
+            "invocacao": "Invocação",
+            "ninja": "Ninja",
+            "luz": "Luz",
+            "transmutacao": "Transmutação",
+            "trevas": "Trevas",
+            "vacuo": "Vácuo"
         }
     },
     "ACTOR.TypeCharacter": "Personagem de Jogador",

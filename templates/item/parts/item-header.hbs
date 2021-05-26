@@ -8,7 +8,8 @@
 		{{#if (or (eq item.type "jutsu") (eq item.type "arma"))}}
 		<footer>
 			{{#if (eq item.type "jutsu")}}
-			<label style="font-size: 11px;margin-left: 10px;">{{lookup config.tipoChacra data.tipoChacra}} {{lookup config.grauJutsu data.grau}} ({{data.escola}})</label>
+			<label style="font-size: 11px;margin-left: 10px;">
+				{{lookup config.tipoChacraAttr data.tipoChacra}} ({{#jutsuDescricao data.descritores}}{{/jutsuDescricao}}) {{lookup config.grauJutsu data.grau}}</label>
 			{{/if}}
 			{{#if (eq item.type "arma")}}<label style="font-size: 11px;margin-left: 10px;">
 				{{lookup config.tipoArma data.tipoArma }} — 
