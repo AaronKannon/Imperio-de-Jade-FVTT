@@ -32,7 +32,7 @@
 		{{/if}}
 		{{#if (or (eq item.type "talento") (eq item.type "jutsu"))}}
 			{{#if item.data.ativacao.execucao}}<li><strong>Execução:</strong> {{#each config.listaAtivacao as |name prop|}}{{#if (eq ../data.ativacao.execucao prop)}}{{name}}{{/if}}{{/each}}</li>{{/if}}
-			{{#if item.data.alcance}}<li><strong>Alcance:</strong> {{item.data.alcance}}</li>{{/if}}
+			{{#if item.data.alcance}}<li><strong>Alcance:</strong> {{lookup config.listaAlcance item.data.alcance}}</li>{{/if}}
 			{{#if item.data.alvo}}<li><strong>Alvo:</strong> {{item.data.alvo}}</li>{{/if}}
 			{{#if item.data.area}}<li><strong>Área:</strong> {{item.data.area}}</li>{{/if}}
 			{{#if data.duracao.unidade}}<li><strong>Duração:</strong> {{#if mostrarValorDuracao}}{{item.data.duracao.valor}} {{/if}}{{#each config.listaDuracoes as |name prop|}}{{#if (eq prop "outra")}}{{else if (eq ../data.duracao.unidade prop)}}{{name}}{{/if}}{{/each}}{{#if mostrarPluralDuracao}}s{{/if}}</li>{{/if}}

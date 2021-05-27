@@ -72,6 +72,13 @@
             "disparo": "Disparo",
             "leve": "Leve"
         },
+        "listaAlcance": {
+            "pessoal": "Pessoal",
+	        "corpoacorpo": "Corpo-a-Corpo",
+	        "curto": "Curto",
+	        "longo": "Longo",
+	        "ilimitado": "Ilimitado"
+        },
         "listaAtivacao": {
             "padrao": "Padrão",
             "movimento": "Movimento",

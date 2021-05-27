@@ -87,6 +87,14 @@ idj.listaAtivacao = {
     livre: "idj.listaAtivacao.livre"
 };
 
+idj.listaAlcance = {
+    pessoal: "idj.listaAlcance.pessoal",
+	corpoacorpo: "idj.listaAlcance.corpoacorpo",
+	curto: "idj.listaAlcance.curto",
+	longo: "idj.listaAlcance.longo",
+	ilimitado: "idj.listaAlcance.ilimitado"
+};
+
 idj.listaDuracoes = {
     instantanea: "idj.listaDuracoes.instantanea",
 	cena: "idj.listaDuracoes.cena",

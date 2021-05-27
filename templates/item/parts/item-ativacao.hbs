@@ -15,7 +15,6 @@
             {{#each config.listaAtivacao as |name key|}}
             <option value="{{key}}">{{name}}</option>
             {{/each}}
-			{{#if (eq item.type "jutsu")}}<option value="duasRodadas">Duas Rodadas</option>{{/if}}
 			{{#if (eq item.type "consumivel")}}<option value="verTexto">Ver Texto</option>{{/if}}
             {{/select}}
         </select>
@@ -37,12 +36,9 @@
         <select class="selectatr" name="data.alcance" value={{data.alcance}} data-type="String">
 			{{#select data.alcance}}
 			{{#if (eq item.type "talento")}}<option value=""></option>{{/if}}
-			<option value="Pessoal">Pessoal</option>
-			<option value="Toque">Toque</option>
-			<option value="Curto">Curto</option>
-			<option value="Médio">Médio</option>
-			<option value="Longo">Longo</option>
-			<option value="Ilimitado">Ilimitado</option>
+			{{#each config.listaAlcance as |name alcance|}}
+			<option value="{{alcance}}">{{name}}</option>
+			{{/each}}
 			{{/select}}
 		</select>
     </div>
