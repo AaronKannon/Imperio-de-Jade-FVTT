@@ -98,11 +98,18 @@ idj.listaAlcance = {
 idj.listaDuracoes = {
     instantanea: "idj.listaDuracoes.instantanea",
 	cena: "idj.listaDuracoes.cena",
-    turno: "idj.listaDuracoes.turno",
-    rodada: "idj.listaDuracoes.rodada",
-	sustentada: "idj.listaDuracoes.sustentada",
-	verTexto: "idj.listaDuracoes.verTexto",
+    permanente: "idj.listaDuracoes.permanente",
+	concentracao: "idj.listaDuracoes.concentracao",
+	vejaTexto: "idj.listaDuracoes.vejaTexto",
 	outra: "idj.listaDuracoes.outra"
+};
+
+idj.duracaoDefinida = {
+    rodadas: "idj.duracaoDefinida.rodadas",
+    minutos: "idj.duracaoDefinida.minutos",
+    horas: "idj.duracaoDefinida.horas",
+    dias: "idj.duracaoDefinida.dias",
+    outraUnidade: "idj.duracaoDefinida.outraUnidade"
 };
 
 idj.tipoChacra = {
@@ -147,6 +154,14 @@ idj.jutsuDescritores = {
     transmutacao: "idj.jutsuDescritores.transmutacao",
     trevas: "idj.jutsuDescritores.trevas",
     vacuo: "idj.jutsuDescritores.vacuo"
+};
+
+idj.tipoTalento = {
+    combate: "idj.tipoTalento.combate",
+    pericia: "idj.tipoTalento.pericia",
+    destino: "idj.tipoTalento.destino",
+    poderconcedido: "idj.tipoTalento.poderconcedido",
+    tormenta: "idj.tipoTalento.tormenta"
 };
 
 idj.pvPorNivel = [2, 3, 4, 5, 6];

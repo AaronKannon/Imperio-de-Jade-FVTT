@@ -89,11 +89,17 @@
         "listaDuracoes": {
             "instantanea": "Instantânea",
             "cena": "Cena",
-            "turno": "Turno",
-            "rodada": "Rodada",
-            "sustentada": "Sustentada",
-            "verTexto": "Ver Texto",
+            "permanente": "Permanente",
+            "concentracao": "Concentração",
+            "vejaTexto": "Veja Texto",
             "outra": "Outra"
+        },
+        "idj.duracaoDefinida": {
+            "rodadas": "Rodadas",
+            "minutos": "Minutos",
+            "horas": "Horas",
+            "dias": "Dias",
+            "outraUnidade": "Outra Unidade"
         },
         "tipoChacra": {
             "bracos": "Chacra dos Braços",
@@ -126,6 +132,13 @@
             "transmutacao": "Transmutação",
             "trevas": "Trevas",
             "vacuo": "Vácuo"
+        },
+        "tipoTalento": {
+            "combate": "Combate",
+            "pericia": "Perícia",
+            "destino": "Destino",
+            "poderconcedido": "Poder Concedido",
+            "tormenta": "Tormenta"
         }
     },
     "ACTOR.TypeCharacter": "Personagem de Jogador",
