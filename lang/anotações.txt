@@ -1,0 +1,8 @@
+Permanente + 1 bloco
+Concentração +1 bloco
+
+
+
+{{#if (or (eq data.duracao.unidade "rodada") (eq data.duracao.unidade "turno"))}}
+<input type="text" name="data.duracao.valor" value="{{data.duracao.valor}}" data-dtype="String" placeholder="Quantidade" />
+{{/if}}

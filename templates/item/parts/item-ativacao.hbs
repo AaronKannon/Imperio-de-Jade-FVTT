@@ -63,7 +63,6 @@
 <div class="form-group input-select">
     <label>Duração</label>
     <div class="form-fields">
-		{{#if (or (eq data.duracao.unidade "rodada") (eq data.duracao.unidade "turno"))}}<input type="text" name="data.duracao.valor" value="{{data.duracao.valor}}" data-dtype="String" placeholder="Quantidade" />{{/if}}
         <select name="data.duracao.unidade">
             {{#select data.duracao.unidade}}
 			{{#if (eq item.type "talento")}}<option value=""></option>{{/if}}
@@ -72,6 +71,6 @@
             {{/each}}
             {{/select}}
         </select>
-		{{#if (eq data.duracao.unidade "outra")}}<input type="text" name="data.duracao.valor" value="{{data.duracao.valor}}" data-dtype="String" placeholder="Descrição" />{{/if}}
+		{{#if (or (eq data.duracao.unidade "outra") (eq data.duracao.unidade "permanente") (eq data.duracao.unidade "concentracao"))}}<input type="text" name="data.duracao.valor" value="{{data.duracao.valor}}" data-dtype="String" placeholder="Descrição" />{{/if}}
     </div>
 </div>

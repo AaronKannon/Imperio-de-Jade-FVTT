@@ -104,14 +104,6 @@ idj.listaDuracoes = {
 	outra: "idj.listaDuracoes.outra"
 };
 
-idj.duracaoDefinida = {
-    rodadas: "idj.duracaoDefinida.rodadas",
-    minutos: "idj.duracaoDefinida.minutos",
-    horas: "idj.duracaoDefinida.horas",
-    dias: "idj.duracaoDefinida.dias",
-    outraUnidade: "idj.duracaoDefinida.outraUnidade"
-};
-
 idj.tipoChacra = {
     bracos: "idj.tipoChacra.bracos",
     pernas: "idj.tipoChacra.pernas",

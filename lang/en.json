@@ -87,19 +87,13 @@
             "livre": "Livre"
         },
         "listaDuracoes": {
+            "duracaoDefinida": "Duração Definida",
             "instantanea": "Instantânea",
             "cena": "Cena",
             "permanente": "Permanente",
             "concentracao": "Concentração",
             "vejaTexto": "Veja Texto",
             "outra": "Outra"
-        },
-        "idj.duracaoDefinida": {
-            "rodadas": "Rodadas",
-            "minutos": "Minutos",
-            "horas": "Horas",
-            "dias": "Dias",
-            "outraUnidade": "Outra Unidade"
         },
         "tipoChacra": {
             "bracos": "Chacra dos Braços",

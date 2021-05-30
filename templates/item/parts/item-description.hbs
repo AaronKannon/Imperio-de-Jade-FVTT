@@ -1,8 +1,8 @@
 <div class="tab item-description flexrow active" data-group="primary" data-tab="description">
 	
     <div class="item-properties">
-		
-        <div class="form-group">
+		{{#unless (or (eq item.type "talento") (eq item.type "jutsu"))}}
+		<div class="form-group">
             <label>Quantidade</label>
             <input type="text" name="data.qtd" value="{{data.qtd}}" data-dtype="Number"/>
         </div>
@@ -14,7 +14,8 @@
             <label>Preço</label>
             <input type="text" name="data.preco" value="{{data.preco}}" data-dtype="Number" placeholder="0" data-dtype="Number"/>
         </div>
-		
+		{{/unless}}
+        
 		<ul class="properties-list">
 		{{#if (eq item.type "arma")}}
 		{{#each config.weaponProperties as |name prop|}}
