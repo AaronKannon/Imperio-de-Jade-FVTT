@@ -5,8 +5,8 @@
 
     {{!-- Item Sheet Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item active" data-tab="description">Descrição</a>
-        <a class="item" data-tab="details">Detalhes</a>
+        <a class="item active" data-tab="description">{{ localize 'IDJ.tabDescricao' }}</a>
+        <a class="item" data-tab="details">{{ localize 'IDJ.tabDetalhes' }}</a>
         {{!-- <a class="item" data-tab="encantos">Encantos</a> --}}
         {{!-- <a class="item" data-tab="effects">Efeitos</a> --}}
     </nav>
@@ -18,7 +18,7 @@
         {{!-- Details Tab --}}
         <div class="tab details" data-group="primary" data-tab="details">
             <div class="form-group">
-                <label>Tipo</label>
+                <label>{{ localize 'IDJ.detalhes.tipo' }}</label>
 				<div class="form-fields">
 					<select class="selectatr" name="data.tipoArma">
 						{{#select data.tipoArma}}
@@ -31,7 +31,7 @@
             </div>
 
 			<div class="form-group">
-				<label>Custo (PM)</label>
+				<label>{{ localize 'IDJ.detalhes.custo' }}</label>
 				<div class="form-fields">
 					<input type="number" name="data.custo" value="{{data.custo}}" data-dtype="Number"/>
 				</div>
@@ -39,7 +39,7 @@
 			
             {{!-- Weapon Properties --}}
             <div class="form-group stacked">
-                <label>Propriedades</label>
+                <label>{{ localize 'IDJ.detalhes.propriedades' }}</label>
                 {{#each config.weaponProperties as |name prop|}}
                 <label class="checkbox">
                     <input type="checkbox" name="data.propriedades.{{prop}}" value="{{name}}" {{checked (lookup ../data.propriedades prop)}} data-dtype="Boolean" /> {{ name }}
@@ -49,12 +49,12 @@
 
             <hr>
             <div class="form-group">
-				<label>Ataque: 1d20+</label>
+				<label>{{ localize 'IDJ.detalhes.ataque' }}</label>
 				<div class="form-fields">
-					<select class="selectatr" name="data.atrAtq" value={{data.atrAtq}} title="Alterar Atributo do Ataque" data-type="String">
+					<select class="selectatr" name="data.atrAtq" value={{data.atrAtq}} title="{{ localize 'IDJ.detalhes.titleAtributo' }}" data-type="String">
 						{{#select data.atrAtq}}
-						{{#if npc}}<option value="0">Nenhum</option>
-						{{else}}<option value="0">Padrão</option>{{/if}}
+						{{#if npc}}<option value="0">{{ localize 'IDJ.detalhes.nenhum' }}</option>
+						{{else}}<option value="0">{{ localize 'IDJ.detalhes.ataquePadrao' }}</option>{{/if}}
 						{{#each config.atributos as |atr key|}}
 						<option value="{{key}}">{{atr}}</option>
 						{{/each}}
@@ -62,35 +62,35 @@
 					</select>
 					<select class="selectatr" name="data.pericia" value={{data.pericia}} data-type="String">
 					  {{#select data.pericia}}
-					  {{#if npc}}<option value="0">Nenhum</option>{{/if}}
-					  <option value="corpoacorpo">Corpo-a-Corpo</option>
-					  <option value="distancia">À Distância</option>
+					  {{#if npc}}<option value="0">{{ localize 'IDJ.detalhes.nenhum' }}</option>{{/if}}
+					  <option value="corpoacorpo">{{ localize 'IDJ.detalhes.ataqueCorpoACorpo' }}</option>
+					  <option value="distancia">{{ localize 'IDJ.detalhes.ataqueADistancia' }}</option>
 					  {{/select}}
 					</select>
-					<input type="text" title="Bônus" name="data.atqBns" value="{{#ifEquals data.atqBns ''}}0{{else}}{{data.atqBns}}{{/ifEquals}}" data-dtype="String"/>
+					<input type="text" title="{{ localize 'IDJ.detalhes.titlebonus' }}" name="data.atqBns" value="{{#ifEquals data.atqBns ''}}0{{else}}{{data.atqBns}}{{/ifEquals}}" data-dtype="String"/>
 				</div>
 			</div>
 			<div class="form-group">
-				<label>Dano: </label>
+				<label>{{ localize 'IDJ.detalhes.dano' }}</label>
 				<div class="form-fields">
 					<input type="text" title="Dados de Dano" name="data.dano" value="{{data.dano}}" data-dtype="String"  placeholder="ex: 1d6" />
 					<select class="selectatr" name="data.atrDan" value={{data.atrDan}} data-type="String">
 						{{#select data.atrDan}}
-						<option value="0">Nenhum</option>
+						<option value="0">{{ localize 'IDJ.detalhes.nenhum' }}</option>
 						{{#each config.atributos as |atr key|}}
 						<option value="{{key}}">{{atr}}</option>
 						{{/each}}
 						{{/select}}
 					</select>
-					<input type="text" title="Bônus" name="data.danoBns" value="{{data.danoBns}}" data-dtype="String"  placeholder="ex.: +2 , +1d6+2"/>
-					<input type="text" title="Tipo de Dano" name="data.tipo" value="{{data.tipo}}" data-dtype="String" placeholder="Tipo" />
+					<input type="text" title="{{ localize 'IDJ.detalhes.titleDadosDano' }}" name="data.danoBns" value="{{data.danoBns}}" data-dtype="String"  placeholder="ex.: +2 , +1d6+2"/>
+					<input type="text" title="{{ localize 'IDJ.detalhes.titleTipoDano' }}" name="data.tipo" value="{{data.tipo}}" data-dtype="String" placeholder="Tipo" />
 				</div>
 			</div>
 			<div class="form-group">
-				<label>Crítico</label>
+				<label>{{ localize 'IDJ.detalhes.critico' }}</label>
 				<div class="form-fields">
-					<input type="number" title="Margem de Ameaça" name="data.criticoM" value="{{data.criticoM}}" data-dtype="Number" min="1" max="20" placeholder="ex.: 19"/>
-					<input type="number" title="Multiplicador" name="data.criticoX" value="{{data.criticoX}}" data-dtype="Number" min="2" placeholder="2" />
+					<input type="number" title="{{ localize 'IDJ.detalhes.titleAmeaca' }}" name="data.criticoM" value="{{data.criticoM}}" data-dtype="Number" min="1" max="20" placeholder="ex.: 19"/>
+					<input type="number" title="{{ localize 'IDJ.detalhes.titleMultiplicador' }}" name="data.criticoX" value="{{data.criticoX}}" data-dtype="Number" min="2" placeholder="2" />
 				</div>
 			</div>
 			{{#if (or data.propriedades.arremesso data.propriedades.disparo)}}
@@ -99,10 +99,10 @@
 				<div class="form-fields">
 					<select class="selectatr" name="data.alcance" value={{data.alcance}} data-type="String">
 						{{#select data.alcance}}
-						<option value="">Nenhum</option>
-						<option value="Curto">Curto</option>
-						<option value="Médio">Médio</option>
-						<option value="Longo">Longo</option>
+						<option value="">{{ localize 'IDJ.detalhes.nenhum' }}</option>
+						{{#each config.campoAlcance as |tipo alcance|}}
+						<option value="{{tipo}}">{{tipo}}</option>
+						{{/each}}
 						{{/select}}
 					</select>
 				</div>
@@ -110,8 +110,8 @@
 			{{/if}}
 			<hr>
 			<div class="form-group">
-				<label for="chatFlavor">ChatFlavor</label>
-				<textarea name="data.chatFlavor" contenteditable="true">{{data.chatFlavor}}</textarea>
+				<label for="textoParaOChat">{{ localize 'IDJ.detalhes.textoParaOChat' }}</label>
+				<textarea name="data.textoParaOChat" contenteditable="true">{{data.textoParaOChat}}</textarea>
 			</div>
         </div>
     </section>

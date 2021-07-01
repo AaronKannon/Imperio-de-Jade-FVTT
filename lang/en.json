@@ -74,10 +74,15 @@
         },
         "listaAlcance": {
             "pessoal": "Pessoal",
-	        "corpoacorpo": "Corpo-a-Corpo",
-	        "curto": "Curto",
-	        "longo": "Longo",
-	        "ilimitado": "Ilimitado"
+            "corpoacorpo": "Corpo-a-Corpo",
+            "curto": "Curto",
+            "longo": "Longo",
+            "ilimitado": "Ilimitado"
+        },
+        "campoAlcance": {
+            "curto": "Curto",
+            "medio": "Médio",
+            "longo": "Longo"
         },
         "listaAtivacao": {
             "padrao": "Padrão",
@@ -143,5 +148,31 @@
     "ITEM.TypeConsumivel": "Consumível",
     "ITEM.TypeJutsu": "Jutsu",
     "ITEM.TypeTalento": "Talento",
-    "ITEM.TypeTesouro": "Tesouro"
+    "ITEM.TypeTesouro": "Tesouro",
+    "IDJ.itemNome": "Nome do Item",
+    "IDJ.corpoACorpo": "Corpo a Corpo",
+    "IDJ.ataqueDistancia": "Ataque à Distância",
+    "IDJ.umaMao": "Uma Mão",
+    "IDJ.duasMaos": "Duas Mãos",
+    "IDJ.leve": "Leve",
+    "IDJ.tabDescricao": "Descrição",
+    "IDJ.tabDetalhes": "Detalhes",
+    "IDJ.detalhes.tipo": "Tipo",
+    "IDJ.detalhes.custo": "Custo (PM)",
+    "IDJ.detalhes.propriedades": "Propriedades",
+    "IDJ.detalhes.ataque": "Ataque: 1d20 +",
+    "IDJ.detalhes.nenhum": "Nenhum",
+    "IDJ.detalhes.ataquePadrao": "Padrão",
+    "IDJ.detalhes.ataqueCorpoACorpo": "Corpo-a-Corpo",
+    "IDJ.detalhes.ataqueADistancia": "À Distância",
+    "IDJ.detalhes.titleAtributo": "Alterar Atributo do Ataque",
+    "IDJ.detalhes.titlebonus": "Bônus",
+    "IDJ.detalhes.dano": "Dano: ",
+    "IDJ.detalhes.titleDadosDano": "Dados de Dano",
+    "IDJ.detalhes.titleTipoDano": "Tipo de Dano",
+    "IDJ.detalhes.critico": "Crítico",
+    "IDJ.detalhes.titleAmeaca": "Margem de Ameaça",
+    "IDJ.detalhes.titleMultiplicador": "Multiplicador",
+    "IDJ.detalhes.alcance": "Alcance",
+    "IDJ.detalhes.textoParaOChat": "Texto para o Chat"
 }

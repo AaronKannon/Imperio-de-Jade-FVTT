@@ -89,19 +89,25 @@ idj.listaAtivacao = {
 
 idj.listaAlcance = {
     pessoal: "idj.listaAlcance.pessoal",
-	corpoacorpo: "idj.listaAlcance.corpoacorpo",
-	curto: "idj.listaAlcance.curto",
-	longo: "idj.listaAlcance.longo",
-	ilimitado: "idj.listaAlcance.ilimitado"
+    corpoacorpo: "idj.listaAlcance.corpoacorpo",
+    curto: "idj.listaAlcance.curto",
+    longo: "idj.listaAlcance.longo",
+    ilimitado: "idj.listaAlcance.ilimitado"
+};
+
+idj.campoAlcance = {
+    curto: "idj.campoAlcance.curto",
+    medio: "idj.campoAlcance.medio",
+    longo: "idj.campoAlcance.longo"
 };
 
 idj.listaDuracoes = {
     instantanea: "idj.listaDuracoes.instantanea",
-	cena: "idj.listaDuracoes.cena",
+    cena: "idj.listaDuracoes.cena",
     permanente: "idj.listaDuracoes.permanente",
-	concentracao: "idj.listaDuracoes.concentracao",
-	vejaTexto: "idj.listaDuracoes.vejaTexto",
-	outra: "idj.listaDuracoes.outra"
+    concentracao: "idj.listaDuracoes.concentracao",
+    vejaTexto: "idj.listaDuracoes.vejaTexto",
+    outra: "idj.listaDuracoes.outra"
 };
 
 idj.tipoChacra = {

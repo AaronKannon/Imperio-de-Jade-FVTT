@@ -3,7 +3,7 @@
 
 	<div class="header-details {{#if (or (eq item.type "jutsu") (eq item.type "arma"))}}flexcol{{else}}flexrow{{/if}}">
 		<h1 class="charname" style="margin: 0;">
-			<input name="name" type="text" value="{{item.name}}" placeholder="Nome"/>
+			<input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'IDJ.itemNome' }}"/>
 		</h1>
 		{{#if (or (eq item.type "jutsu") (eq item.type "arma"))}}
 		<footer>
@@ -13,10 +13,10 @@
 			{{/if}}
 			{{#if (eq item.type "arma")}}<label style="font-size: 11px;margin-left: 10px;">
 				{{lookup config.tipoArma data.tipoArma }} — 
-				{{#if (or data.propriedades.arremesso data.propriedades.disparo)}}Ataque à Distância ({{data.alcance}})
-				{{else}}Corpo a Corpo
+				{{#if (or data.propriedades.arremesso data.propriedades.disparo)}}{{ localize 'IDJ.ataqueDistancia' }} ({{data.alcance}})
+				{{else}}{{ localize 'IDJ.corpoACorpo' }}
 				{{/if}} — 
-				{{#if data.propriedades.duasMaos}}Duas Mãos{{else}}{{#if data.propriedades.leve}}Leve{{else}}Uma Mão{{/if}}{{/if}}</label>{{/if}}
+				{{#if data.propriedades.duasMaos}}{{ localize 'IDJ.duasMaos' }}{{else}}{{#if data.propriedades.leve}}{{ localize 'IDJ.leve' }}{{else}}{{ localize 'IDJ.umaMao' }}{{/if}}{{/if}}</label>{{/if}}
 		</footer>
 		{{/if}}
 	</div>
