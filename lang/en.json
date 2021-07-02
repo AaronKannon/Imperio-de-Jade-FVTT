@@ -174,5 +174,18 @@
     "IDJ.detalhes.titleAmeaca": "Margem de Ameaça",
     "IDJ.detalhes.titleMultiplicador": "Multiplicador",
     "IDJ.detalhes.alcance": "Alcance",
-    "IDJ.detalhes.textoParaOChat": "Texto para o Chat"
+    "IDJ.detalhes.textoParaOChat": "Texto para o Chat",
+    "IDJ.descricao.qualidade": "Qualidade",
+    "IDJ.descricao.peso": "Peso",
+    "IDJ.descricao.preco": "Preço",
+    "IDJ.equip.ca": "CA: ",
+    "IDJ.equip.bonusArmadura": "Bônus de Armadura: ",
+    "IDJ.equip.penalidade": "Penalidade: ",
+    "IDJ.talentoJutsu.execucao": "Execução:",
+    "IDJ.talentoJutsu.alcance": "Alcance:",
+    "IDJ.talentoJutsu.alvo": "Alvo:",
+    "IDJ.talentoJutsu.area": "Área:",
+    "IDJ.talentoJutsu.duracao": "Duração:",
+    "IDJ.talentoJutsu.resistencia": "Resistência:",
+    "IDJ.talentoJutsu.cd": "CD"
 }

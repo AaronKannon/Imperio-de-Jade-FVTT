@@ -3,15 +3,15 @@
     <div class="item-properties">
 		{{#unless (or (eq item.type "talento") (eq item.type "jutsu"))}}
 		<div class="form-group">
-            <label>Quantidade</label>
+            <label>{{ localize 'IDJ.descricao.qualidade' }}</label>
             <input type="text" name="data.qtd" value="{{data.qtd}}" data-dtype="Number"/>
         </div>
         <div class="form-group">
-            <label>Peso</label>
+            <label>{{ localize 'IDJ.descricao.peso' }}</label>
             <input type="text" name="data.peso" value="{{data.peso}}" data-dtype="Number"/>
         </div>
 		<div class="form-group">
-            <label>Preço</label>
+            <label>{{ localize 'IDJ.descricao.preco' }}</label>
             <input type="text" name="data.preco" value="{{data.preco}}" data-dtype="Number" placeholder="0" data-dtype="Number"/>
         </div>
 		{{/unless}}
@@ -24,20 +24,20 @@
 		{{/each}}
 		{{/if}}
 		{{#if (eq item.type "equip")}}
-			{{#if item.data.armadura.value}}<li>CA: {{item.data.armadura.value}}</li>{{/if}}
-			{{#if item.data.armadura.bonusarmadura}}<li>Bônus de Armadura: {{item.data.armadura.bonusarmadura}}</li>{{/if}}
-			{{#if item.data.armadura.penalidade}}<li>Penalidade: {{item.data.armadura.penalidade}}</li>{{/if}}
+			{{#if item.data.armadura.value}}<li>{{ localize 'IDJ.equip.ca' }}{{item.data.armadura.value}}</li>{{/if}}
+			{{#if item.data.armadura.bonusarmadura}}<li>{{ localize 'IDJ.equip.bonusArmadura' }}{{item.data.armadura.bonusarmadura}}</li>{{/if}}
+			{{#if item.data.armadura.penalidade}}<li>{{ localize 'IDJ.equip.penalidade' }}{{item.data.armadura.penalidade}}</li>{{/if}}
 		{{/if}}
 		{{#if (eq item.type "talento")}}
 			<li style="text-transform: capitalize;"><strong>{{lookup config.tipoTalento item.data.tipo}}</strong>{{#if item.data.subtipo}}: {{item.data.subtipo}}{{/if}}</li>
 		{{/if}}
 		{{#if (or (eq item.type "talento") (eq item.type "jutsu"))}}
-			{{#if item.data.ativacao.execucao}}<li><strong>Execução:</strong> {{#each config.listaAtivacao as |name prop|}}{{#if (eq ../data.ativacao.execucao prop)}}{{name}}{{/if}}{{/each}}</li>{{/if}}
-			{{#if item.data.alcance}}<li><strong>Alcance:</strong> {{lookup config.listaAlcance item.data.alcance}}</li>{{/if}}
-			{{#if item.data.alvo}}<li><strong>Alvo:</strong> {{item.data.alvo}}</li>{{/if}}
-			{{#if item.data.area}}<li><strong>Área:</strong> {{item.data.area}}</li>{{/if}}
-			{{#if data.duracao.unidade}}<li><strong>Duração:</strong> {{#if mostrarValorDuracao}}{{item.data.duracao.valor}} {{/if}}{{#each config.listaDuracoes as |name prop|}}{{#if (eq prop "outra")}}{{else if (eq ../data.duracao.unidade prop)}}{{name}}{{/if}}{{/each}}{{#if mostrarPluralDuracao}}s{{/if}}</li>{{/if}}
-			{{#if item.data.resistencia}}<li><strong>Resistência:</strong> {{item.data.resistencia}}{{#if item.data.totalCD}} (CD {{item.data.totalCD}}){{/if}}</li>{{/if}}
+			{{#if item.data.ativacao.execucao}}<li><strong>{{ localize 'IDJ.talentoJutsu.execucao' }}</strong> {{#each config.listaAtivacao as |name prop|}}{{#if (eq ../data.ativacao.execucao prop)}}{{name}}{{/if}}{{/each}}</li>{{/if}}
+			{{#if item.data.alcance}}<li><strong>{{ localize 'IDJ.talentoJutsu.alcance' }}</strong> {{lookup config.listaAlcance item.data.alcance}}</li>{{/if}}
+			{{#if item.data.alvo}}<li><strong>{{ localize 'IDJ.talentoJutsu.alvo' }}</strong> {{item.data.alvo}}</li>{{/if}}
+			{{#if item.data.area}}<li><strong>{{ localize 'IDJ.talentoJutsu.area' }}</strong> {{item.data.area}}</li>{{/if}}
+			{{#if data.duracao.unidade}}<li><strong>{{ localize 'IDJ.talentoJutsu.duracao' }}</strong> {{#if mostrarValorDuracao}}{{item.data.duracao.valor}} {{/if}}{{#each config.listaDuracoes as |name prop|}}{{#if (eq prop "outra")}}{{else if (eq ../data.duracao.unidade prop)}}{{name}}{{/if}}{{/each}}{{#if mostrarPluralDuracao}}s{{/if}}</li>{{/if}}
+			{{#if item.data.resistencia}}<li><strong>{{ localize 'IDJ.talentoJutsu.resistencia' }}</strong> {{item.data.resistencia}}{{#if item.data.totalCD}} ({{ localize 'IDJ.talentoJutsu.cd' }} {{item.data.totalCD}}){{/if}}</li>{{/if}}
 		{{/if}}
 		</ul>
     </div>
