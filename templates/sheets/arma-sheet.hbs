@@ -109,10 +109,7 @@
 			</div>
 			{{/if}}
 			<hr>
-			<div class="form-group">
-				<label for="textoParaOChat">{{ localize 'IDJ.detalhes.textoParaOChat' }}</label>
-				<textarea name="data.textoParaOChat" contenteditable="true">{{data.textoParaOChat}}</textarea>
-			</div>
+			{{> "systems/imperiodejade/templates/item/parts/item-chatbox.hbs"}}
         </div>
     </section>
 </form>
