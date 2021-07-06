@@ -5,31 +5,37 @@
 
     {{!-- Item Sheet Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <!-- <a class="item active" data-tab="description">Descrição</a> -->
-        <a class="item active" data-tab="details">Detalhes</a>
-        {{#if isGM}}<a class="item active" data-tab="config">Configuração (GM)</a>{{/if}}
+        <a class="item active" data-tab="description">{{ localize 'IDJ.tabDescricao' }}</a>
+        <a class="item" data-tab="details">{{ localize 'IDJ.tabDetalhes' }}</a>
+        {{#if isGM}}<a class="item active" data-tab="config">{{ localize 'IDJ.tabConfigGM' }}</a>{{/if}}
     </nav>
 
     {{!-- Item Sheet Body --}}
     <section class="sheet-body">
 
         {{!-- Description Tab --}}
-
+         {{> "systems/imperiodejade/templates/item/parts/item-description.hbs"}}
 
         {{!-- Details Tab --}}
         <div class="tab details" data-group="primary" data-tab="details">
 
+            <div class="form-group">
+                <label>{{ localize 'IDJ.classe.modHonra' }}</label>
+                <div class="form-fields">
+                    <input type="text" name="data.modHonra" value="{{data.modHonra}}" data-dtype="Number" />
+                </div>
+            </div>
+
             {{!-- Class Levels --}}
             <div class="form-group">
-                <label>Níveis de Classe</label>
+                <label>{{ localize 'IDJ.classe.niveisClasse' }}</label>
                 <div class="form-fields">
                     <input type="number" min="1" name="data.niveis" value="{{data.niveis}}" data-dtype="Number"/>
                 </div>
             </div>
 
-            {{!-- Class Hit Dice --}}
             <div class="form-group">
-                <label>Pontos de Vida por Nível</label>
+                <label>{{ localize 'IDJ.classe.pvPorNivel' }}</label>
                 <div class="form-fields">
                     <select name="data.pvPorNivel">
                         {{#select data.pvPorNivel}}
@@ -42,7 +48,7 @@
             </div>
 			
 			<div class="form-group">
-                <label>Pontos de Mana por Nível</label>
+                <label>{{ localize 'IDJ.classe.pmPorNivel' }}</label>
                 <div class="form-fields">
                     <select name="data.pmPorNivel">
                         {{#select data.pmPorNivel}}
@@ -54,37 +60,26 @@
                 </div>
             </div>
 
-            <!-- <div class="form-group"> -->
-                <!-- <label>Conjurador</label> -->
-                <!-- <div class="form-fields"> -->
-                    <!-- <select name="data.spellcasting"> -->
-                        <!-- {{#select data.spellcasting}} -->
-                            <!-- {{#each config.spellProgression}} -->
-                                <!-- <option value="{{@key}}">{{localize this}}</option> -->
-                            <!-- {{/each}} -->
-                        <!-- {{/select}} -->
-                    <!-- </select> -->
-                <!-- </div> -->
-            <!-- </div> -->
-
             {{!-- Level 1 skills --}}
 			<div class="form-group">
-                <label>Perícias de Classe</label>
+                <label>{{ localize 'IDJ.classe.periciaClasse' }}</label>
                 <div class="form-fields">
 					<input type="text" name="data.pericias.inatas" value="{{data.pericias.inatas}}" data-dtype="String" />
                 </div>
             </div>
 			
             <div class="form-group">
-                <label>Número de Perícias de Classe Adicionais</label>
+                <label>{{ localize 'IDJ.classe.periciasTreinada' }}</label>
                 <div class="form-fields">
                     <input type="text" name="data.pericias.numero" value="{{data.pericias.numero}}" data-dtype="Number" />
                 </div>
             </div>
 
+            {{!-- Colocar o quanto de honra ganha, colocar os talentos iniciais --}}
+
             <div class="form-group">
                 <label>
-                    Perícias Escolhidas
+                    {{ localize 'IDJ.classe.periciasEscolhidas' }}
                     {{#if editable}}
                     <a class="trait-selector class-skills" data-target="data.pericias" data-options="pericias">
                         <i class="fas fa-edit"></i></a>
@@ -103,7 +98,7 @@
 		 <div class="tab config" data-group="primary" data-tab="config">
 			{{#if isGM}}
 			<div class="form-group stacked weapon-properties">
-                <label>Perícias Adicionais</label>
+                <label>{{ localize 'IDJ.classe.periciaClasse' }}</label>
                 {{#each config.pericias as |name prop|}}
                 <label class="checkbox">
                     <input type="checkbox" name="data.pericias.escolhas.{{prop}}" value="{{name}}" {{checked (lookup ../data.pericias.escolhas prop)}} data-dtype="Boolean" /> {{ name }}

@@ -157,6 +157,7 @@
     "IDJ.leve": "Leve",
     "IDJ.tabDescricao": "Descrição",
     "IDJ.tabDetalhes": "Detalhes",
+    "IDJ.tabConfigGM": "Configuração (GM)",
     "IDJ.detalhes.tipo": "Tipo",
     "IDJ.detalhes.custo": "Custo (PM)",
     "IDJ.detalhes.propriedades": "Propriedades",
@@ -187,5 +188,12 @@
     "IDJ.talentoJutsu.area": "Área:",
     "IDJ.talentoJutsu.duracao": "Duração:",
     "IDJ.talentoJutsu.resistencia": "Resistência:",
-    "IDJ.talentoJutsu.cd": "CD"
+    "IDJ.talentoJutsu.cd": "CD",
+    "IDJ.classe.modHonra": "Modificador de Honra",
+    "IDJ.classe.niveisClasse": "Níveis de Classe",
+    "IDJ.classe.pvPorNivel": "Pontos de Vida por Nível",
+    "IDJ.classe.pmPorNivel": "Pontos de Mana por Nível",
+    "IDJ.classe.periciaClasse": "Perícias de Classe",
+    "IDJ.classe.periciasTreinada": "Nº Perícias Treinadas mais Int",
+    "IDJ.classe.periciasEscolhidas": "Perícias Escolhidas"
 }

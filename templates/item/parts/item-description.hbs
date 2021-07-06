@@ -1,5 +1,5 @@
 <div class="tab item-description flexrow active" data-group="primary" data-tab="description">
-	
+	{{#unless (eq item.type "classe")}}
     <div class="item-properties">
 		{{#unless (or (eq item.type "talento") (eq item.type "jutsu"))}}
 		<div class="form-group">
@@ -41,7 +41,8 @@
 		{{/if}}
 		</ul>
     </div>
-
+	{{/unless}}
+	
 	<div class="item-description">
     	{{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
 	</div>
