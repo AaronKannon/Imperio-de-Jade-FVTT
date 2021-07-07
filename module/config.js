@@ -162,5 +162,16 @@ idj.tipoTalento = {
     tormenta: "idj.tipoTalento.tormenta"
 };
 
+idj.tipoEquip = {
+    leve: "idj.tipoEquip.leve",
+    media: "idj.tipoEquip.media",
+    pesada: "idj.tipoEquip.pesada",
+    escudo: "idj.tipoEquip.escudo",
+    traje: "idj.tipoEquip.traje",
+    bonus: "idj.tipoEquip.bonus",
+    natural: "idj.tipoEquip.natural",
+    acessorio: "idj.tipoEquip.acessorio"
+};
+
 idj.pvPorNivel = [2, 3, 4, 5, 6];
 idj.pmPorNivel = [2, 3, 4];

@@ -18,35 +18,30 @@
         <div class="tab details" data-group="primary" data-tab="details">
             {{!-- Equipment Type --}}
             <div class="form-group">
-                <label>Tipo</label>
-                <select name="data.tipo">
+                <label>{{ localize 'IDJ.equip.tipo' }}</label>
+                <select class="selectatr" name="data.tipo">
                     {{#select data.tipo}}
-                    <option value="leve">Armadura Leve</option>
-                    <option value="media">Armadura Média</option>
-                    <option value="pesada">Armadura Pesada</option>
-                    <option value="escudo">Escudo</option>
-                    <option value="traje">Traje</option>
-                    <option value="bonus">Bônus Mágico</option>
-                    <option value="natural">Armadura Natural</option>
-                    <option value="acessorio">Acessório</option>
+                    {{#each config.tipoEquip as |name type|}}
+					<option value="{{type}}">{{name}}</option>
+					{{/each}}
                     {{/select}}
                 </select>
             </div>
             {{!-- CA --}}
             <div class="form-group">
-                <label>Bônus na CA</label>
+                <label>{{ localize 'IDJ.equip.bonusCA' }}</label>
                    <input type="number" name="data.armadura.value" value="{{data.armadura.value}}" data-dtype="Number"/>
             </div>
 
             {{!-- Bônus Maximo de Armadura --}}
             <div class="form-group">
-                <label>Bônus Maximo de Armadura</label>
+                <label>{{ localize 'IDJ.equip.bonusMaxArmadura' }}</label>
                    <input type="number" name="data.armadura.bonusarmadura" value="{{data.armadura.bonusarmadura}}" data-dtype="Number"/>
             </div>
 
             {{!-- Penalidade de Armadura --}}
             <div class="form-group">
-                <label>Penalidade de Armadura</label>
+                <label>{{ localize 'IDJ.equip.penalidadeArmadura' }}</label>
                 <input type="number" name="data.armadura.penalidade" value="{{data.armadura.penalidade}}" data-dtype="Number" max="0"/>
             </div>
         </div>

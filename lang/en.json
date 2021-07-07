@@ -138,6 +138,16 @@
             "destino": "Destino",
             "poderconcedido": "Poder Concedido",
             "tormenta": "Tormenta"
+        },
+        "tipoEquip": {
+            "leve": "Armadura Leve",
+            "media": "Armadura Média",
+            "pesada": "Armadura Pesada",
+            "escudo": "Escudo",
+            "traje": "Traje",
+            "bonus": "Bônus Mágico",
+            "natural": "Armadura Natural",
+            "acessorio": "Acessório"
         }
     },
     "ACTOR.TypeCharacter": "Personagem de Jogador",
@@ -195,5 +205,9 @@
     "IDJ.classe.pmPorNivel": "Pontos de Mana por Nível",
     "IDJ.classe.periciaClasse": "Perícias de Classe",
     "IDJ.classe.periciasTreinada": "Nº Perícias Treinadas mais Int",
-    "IDJ.classe.periciasEscolhidas": "Perícias Escolhidas"
+    "IDJ.classe.periciasEscolhidas": "Perícias Escolhidas",
+    "IDJ.equip.tipo": "Tipo",
+    "IDJ.equip.bonusCA": "Bônus na CA",
+    "IDJ.equip.bonusMaxArmadura": "Bônus Maximo de Armadura",
+    "IDJ.equip.penalidadeArmadura": "Penalidade de Armadura"
 }
