@@ -2,7 +2,11 @@
   font-family: "Gang of Three";
   src: url("../assets/gangofthree.ttf");
 }
-.idj.sheet.item .sheet-tabs a {
+@font-face {
+  font-family: "Yozakura";
+  src: url("../assets/YozakuraJP-Regular.ttf");
+}
+.idj.sheet.item .sheet-tabs .item {
   font-family: "Gang of Three";
 }
 .idj.sheet.item .charname {
@@ -10,9 +14,9 @@
 }
 .idj.sheet.item .custo {
   font-family: "Gang of Three";
-  border: 0 !important;
   border-bottom: 0 !important;
-  font-size: 30px;
+  margin-bottom: 0;
+  font-size: 35px;
 }
 .idj.sheet.item form {
   display: flex;
