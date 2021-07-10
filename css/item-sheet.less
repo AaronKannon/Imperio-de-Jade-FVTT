@@ -3,16 +3,15 @@
   src: url("../assets/gangofthree.ttf");
 }
 
-@font-face {
-  font-family: "Yozakura";
-  src: url("../assets/YozakuraJP-Regular.ttf");
-}
-
 @faint-color: rgba(0,0,0,.1);
 @primary-color: rgba(25,24,19,1);
 @faintest-color: rgba(0,0,0,.05);
 
 .idj.sheet.item {
+  .sheet-header {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .sheet-tabs {
     .item {
       font-family: "Gang of Three";
@@ -20,6 +19,18 @@
   }
   .charname {
     font-family: "Gang of Three";
+    input {
+      margin: 0 2%;
+    }
+  }
+  .manabox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 101px;
+    border: 2px groove #eeede0;
+    height: 64px;
+    margin-left: 6px;
   }
   .custo {
     font-family: "Gang of Three";

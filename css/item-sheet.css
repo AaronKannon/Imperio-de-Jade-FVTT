@@ -2,15 +2,27 @@
   font-family: "Gang of Three";
   src: url("../assets/gangofthree.ttf");
 }
-@font-face {
-  font-family: "Yozakura";
-  src: url("../assets/YozakuraJP-Regular.ttf");
+.idj.sheet.item .sheet-header {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .idj.sheet.item .sheet-tabs .item {
   font-family: "Gang of Three";
 }
 .idj.sheet.item .charname {
   font-family: "Gang of Three";
+}
+.idj.sheet.item .charname input {
+  margin: 0 2%;
+}
+.idj.sheet.item .manabox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 101px;
+  border: 2px groove #eeede0;
+  height: 64px;
+  margin-left: 6px;
 }
 .idj.sheet.item .custo {
   font-family: "Gang of Three";
