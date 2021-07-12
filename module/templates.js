@@ -17,6 +17,7 @@ export const preloadHandlebarsTemplates = async function() {
         "systems/imperiodejade/templates/item/parts/item-description.hbs",
         "systems/imperiodejade/templates/item/parts/item-ativacao.hbs",
         "systems/imperiodejade/templates/item/parts/item-resistencia.hbs",
-        "systems/imperiodejade/templates/item/parts/item-chatbox.hbs"
+        "systems/imperiodejade/templates/item/parts/item-chatbox.hbs",
+        "systems/imperiodejade/templates/item/parts/item-rolagem.hbs"
     ]);
 };

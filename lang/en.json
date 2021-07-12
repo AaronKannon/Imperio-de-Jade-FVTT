@@ -209,5 +209,12 @@
     "IDJ.equip.tipo": "Tipo",
     "IDJ.equip.bonusCA": "Bônus na CA",
     "IDJ.equip.bonusMaxArmadura": "Bônus Maximo de Armadura",
-    "IDJ.equip.penalidadeArmadura": "Penalidade de Armadura"
+    "IDJ.equip.penalidadeArmadura": "Penalidade de Armadura",
+    "IDJ.consumivel.rolagem": "Rolagem",
+    "IDJ.consumivel.ativacao": "Ativação",
+    "IDJ.jutsu.chacra": "Chacra",
+    "IDJ.jutsu.grau": "Grau",
+    "IDJ.jutsu.descritores": "Descritores",
+    "IDJ.talento.formula": "Fórmula",
+    "IDJ.talento.subtipo": "Subtipo"
 }

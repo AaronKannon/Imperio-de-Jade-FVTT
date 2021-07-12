@@ -1,0 +1,21 @@
+{{#if (or (eq item.type "jutsu") (eq item.type "consumivel"))}}
+<div class="form-group">
+    <label>{{ localize 'IDJ.consumivel.rolagem' }}</label>
+    <input type="text" name="data.efeito" value="{{data.efeito}}" data-dtype="String"  placeholder="Ex: 6d6+6"/>
+</div>
+{{/if}}
+{{#if (eq item.type "talento")}}
+<div class="form-group">
+    <label>{{ localize 'IDJ.talento.formula' }}</label>
+    <div class="form-fields">
+        <input type="text" name="data.roll" value="{{data.roll}}" data-dtype="String"/>
+    </div>
+</div>
+{{/if}}
+
+<hr>
+<h3>{{ localize 'IDJ.consumivel.ativacao' }}</h3>
+{{> "systems/imperiodejade/templates/item/parts/item-ativacao.hbs"}}
+{{> "systems/imperiodejade/templates/item/parts/item-resistencia.hbs"}}
+<hr>
+{{> "systems/imperiodejade/templates/item/parts/item-chatbox.hbs"}}

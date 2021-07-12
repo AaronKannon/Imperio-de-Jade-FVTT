@@ -3,8 +3,7 @@
   src: url("../assets/gangofthree.ttf");
 }
 .idj.sheet.item .sheet-header {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 5px;
 }
 .idj.sheet.item .sheet-tabs .item {
   font-family: "Gang of Three";
