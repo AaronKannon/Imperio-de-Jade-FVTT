@@ -7,9 +7,11 @@
 }
 .idj.sheet.item .sheet-tabs .item {
   font-family: "Gang of Three";
+  font-size: 16px;
 }
 .idj.sheet.item .charname {
   font-family: "Gang of Three";
+  width: 100%;
 }
 .idj.sheet.item .charname input {
   margin: 0 2%;
@@ -19,11 +21,11 @@
   align-items: center;
   justify-content: center;
   flex: 0 101px;
-  border: 2px groove #eeede0;
-  height: 64px;
+  border: 5px double #afad13;
+  height: 100%;
   margin-left: 6px;
 }
-.idj.sheet.item .custo {
+.idj.sheet.item .manabox .custo {
   font-family: "Gang of Three";
   border-bottom: 0 !important;
   margin-bottom: 0;

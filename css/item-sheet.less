@@ -14,12 +14,15 @@
   .sheet-tabs {
     .item {
       font-family: "Gang of Three";
+      font-size: 16px;
     }
   }
   .charname {
     font-family: "Gang of Three";
+    width: 100%;
     input {
       margin: 0 2%;
+      //background-image: url(../assets/nameBG.svg) no-repeat;
     }
   }
   .manabox {
@@ -27,15 +30,16 @@
     align-items: center;
     justify-content: center;
     flex: 0 101px;
-    border: 2px groove #eeede0;
-    height: 64px;
+    border: 5px double #afad13;
+    //background: rgba(13, 192, 37, 0.185);
+    height: 100%;
     margin-left: 6px;
-  }
-  .custo {
-    font-family: "Gang of Three";
-    border-bottom: 0 !important;
-    margin-bottom: 0;
-    font-size: 35px;
+    .custo {
+      font-family: "Gang of Three";
+      border-bottom: 0 !important;
+      margin-bottom: 0;
+      font-size: 35px;
+    }
   }
   form {
       display: flex;
