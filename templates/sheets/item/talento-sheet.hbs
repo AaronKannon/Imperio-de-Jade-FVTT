@@ -1,6 +1,6 @@
 <form class="{{cssClass}}" autocomplete="off">
     {{!-- Item Sheet Header --}}
-    {{> "systems/imperiodejade/templates/item/parts/item-header.hbs"}}
+    {{> "systems/imperiodejade/templates/sheets/item/parts/item-header.hbs"}}
 	
 	{{!-- Item Sheet Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
@@ -11,7 +11,7 @@
     {{!-- Sheet Body --}}
     <section class="sheet-body">
 		{{!-- Description Tab --}}
-        {{> "systems/imperiodejade/templates/item/parts/item-description.hbs"}}
+        {{> "systems/imperiodejade/templates/sheets/item/parts/item-description.hbs"}}
 		
 		<div class="tab details" data-group="primary" data-tab="details">
 			<div class="form-group">
@@ -27,7 +27,7 @@
 					<input type="text" title="{{ localize 'IDJ.talento.subtipo' }}" name="data.subtipo" value="{{data.subtipo}}" data-dtype="String" />
 				</div>
 			</div>
-			{{> "systems/imperiodejade/templates/item/parts/item-rolagem.hbs"}}
+			{{> "systems/imperiodejade/templates/sheets/item/parts/item-rolagem.hbs"}}
 		</div>
     </section>
 </form>

@@ -1,14 +1,25 @@
 import { idj } from "./config.js";
-import IDJItemSheet from "./sheet/IDJItemSheet.js";
-import IDJActorSheet from "./sheet/IDJActorSheet.js";
+import IDJItemSheet from "./sheet/item/IDJItemSheet.js";
+import IDJActorSheet from "./sheet/actor/IDJActorSheet.js";
+import { SystemSettings } from "./settings.js";
 
 //Carregando Templates para modularidade
 import { preloadHandlebarsTemplates } from "./templates.js";
 import { registerHandlebarsHelpers } from "./handlebars.js";
 
-Hooks.once("init", function() {
+Hooks.once("init", async function() {
     console.log("IDJ | Iniciando o sistema Império de Jade");
+
+    game.idj = {
+        applications: {
+            IDJActorSheet,
+            IDJItemSheet
+        },
+        config: idj
+    }
     CONFIG.idj = idj;
+
+    SystemSettings();
 
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("idj", IDJItemSheet, { makeDefault: true });
