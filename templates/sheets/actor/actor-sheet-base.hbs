@@ -8,7 +8,7 @@
 	<nav class="sheet-tabs tabs" data-group="primary">
 		<label><i class="fas fa-dice-d20"></i> <a class="item" data-tab="attributes" title="Ficha">Ficha</a></label>
 		<label><i class="fas fa-book"></i> <a class="item" data-tab="journal">Diário</a></label>
-		<label><i class="fas fa-bahai"></i> <a class="item" data-tab="efeitos" title="Efeitos">Efeitos</a></label>
+		{{!-- <label><i class="fas fa-bahai"></i> <a class="item" data-tab="efeitos" title="Efeitos">Efeitos</a></label> --}}
 		<label style="flex:0"><a class="item" id="configure-actor" title="Configurar"><i class="fas fa-cogs"></i></a></label>
 	</nav>
 
@@ -18,7 +18,7 @@
 		{{!-- Attributes Tab --}}
 		<div class="tab attributes" data-group="primary" data-tab="attributes">
 			<div class="attributes-body">
-				<div class="dados" style="width:61%">
+				<div class="dados">
 					{{!-- Abilities --}}
 					<ul class="ability-scores flexrow">
 						{{#each data.atributos as |atr key|}}
@@ -94,14 +94,14 @@
 							<li class="flexrow item-header flex-center">
 								<h4 class="box-title">Defesa</h4>
 							</li>
-							<li class="flexrow text-center" >
-								<div class="item-name" style="height:80px;">
-										<h1 name="data.defesa.value" style="padding:0">{{data.defesa.value}}</h1>
+							<li class="flexrow text-center">
+								<div class="item-name">
+										<h1 name="data.ca.value" style="padding:0">{{data.ca.value}}</h1>
 									<div class="flexrow">
 										{{#if actor.flags.mostrarOutrosDefesa}}
-											<input name="data.defesa.outro" title="Outros" type="number" class="temphealth" placeholder="0" value="{{data.defesa.outro}}" />
+											<input name="data.ca.outro" title="Outros" type="number" class="temphealth" placeholder="0" value="{{data.ca.outro}}" />
 										{{/if}}
-											<input name="data.defesa.temp" title="Bônus Temporário" type="number"  class="temphealth" placeholder="0" value="{{data.defesa.temp}}" />
+											<input name="data.ca.bonus" title="Bônus Temporário" type="number"  class="temphealth" placeholder="0" value="{{data.ca.bonus}}" />
 									</div>
 								</div>
 							</li>
@@ -165,7 +165,7 @@
 					</div>
 					{{/if}}
 				</div>
-				<div class="skills" style="width:38%">
+				<div class="skills">
 					{{!-- Skills --}}
 
 					{{> "systems/imperiodejade/templates/sheets/actor/parts/actor-skills.hbs"}}
@@ -178,9 +178,7 @@
 								<div class="item-name" style="flex: 5;">Nome</div>
 								<div class="item-qtd">Qtd</div>
 								<div class="item-peso">Peso</div>
-								<div class="item-controls">
-
-								</div>
+								<div class="item-controls"></div>
 							</li>
 							<div style="max-height: 450px; overflow-y: auto; scrollbar-width: thin; padding-right: 2px;">
 							{{#each actor.inventario as |item id|}}
@@ -243,13 +241,11 @@
 		</div>
 
 		{{!-- Journal Tab --}}
-		<div class="tab journal" data-group="primary" data-tab="journal">
-			{{> "systems/imperiodejade/templates/sheets/actor/parts/actor-diario.hbs"}}
-		</div>
+		{{> "systems/imperiodejade/templates/sheets/actor/parts/actor-diario.hbs"}}
 
 		{{!-- Efeitos Tab --}}
-		<div class="tab efeitos" data-group="primary" data-tab="efeitos">
-			{{> "systems/imperiodejade/templates/sheets/actor/parts/active-effects.hbs"}}
-		</div>
+		{{!-- <div class="tab efeitos" data-group="primary" data-tab="efeitos"> --}}
+			{{!-- {{> "systems/imperiodejade/templates/sheets/actor/parts/active-effects.hbs"}}
+		{{!-- </div> --}}
 	</section>
 </form>

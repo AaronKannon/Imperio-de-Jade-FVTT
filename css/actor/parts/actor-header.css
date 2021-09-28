@@ -1,0 +1,52 @@
+.idj.sheet.actor .sheet-header {
+  flex: 0 0 100px;
+  border-bottom: 2px groove #eeede0;
+  font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+  font-size: 20px;
+  /* Character Name */
+  /* Profile Image */
+  /* Header Summary Details */
+}
+.idj.sheet.actor .sheet-header h1 {
+  flex: 1;
+  border-bottom: none;
+  height: 60px;
+  margin: 0;
+  padding: 5px;
+}
+.idj.sheet.actor .sheet-header h1 input {
+  display: block;
+  height: 50px;
+  font-size: 32px;
+  margin: 0;
+}
+.idj.sheet.actor .sheet-header img.profile {
+  /* flex: 0 0 100px; */
+  flex: 1;
+  max-width: 100px;
+  height: 100px;
+  margin-right: 0;
+  /* object-fit: cover; */
+  /* border: none; */
+  /* border-right: 2px groove #eeede0; */
+}
+.idj.sheet.actor .sheet-header .summary {
+  flex: 0 0 100%;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 2px groove #eeede0;
+  border-bottom: none;
+}
+.idj.sheet.actor .sheet-header .summary li {
+  /* height: calc(100% - 6px); */
+  float: left;
+  margin: 2px 0;
+  padding: 0;
+  border-right: 2px groove #eeede0;
+  line-height: 34px;
+}
+.idj.sheet.actor .sheet-header .summary li:last-child {
+  border-right: none;
+}

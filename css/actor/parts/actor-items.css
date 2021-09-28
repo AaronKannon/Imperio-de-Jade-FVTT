@@ -1,0 +1,30 @@
+.idj.sheet.actor .item-list {
+  list-style: none;
+  margin: 7px 0;
+  padding: 0;
+  overflow-y: unset;
+}
+.idj.sheet.actor .item-list .item {
+  height: auto;
+  line-height: 24px;
+  padding: 0;
+  border-bottom: 1px solid #c9c7b8;
+  align-items: center;
+}
+.idj.sheet.actor .item-list .item:last-child {
+  border-bottom: none;
+}
+.idj.sheet.actor .item-list .item-list {
+  background: none;
+}
+.idj.sheet.actor .item-list .item-list .item-summary {
+  flex: 0 0 100%;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0.25em 0.5em;
+  color: #191813;
+  border-top: 1px solid #c9c7b8;
+}
+.idj.sheet.actor .item-list .item-header {
+  font-weight: bold;
+}

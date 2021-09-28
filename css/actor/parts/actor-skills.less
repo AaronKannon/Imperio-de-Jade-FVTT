@@ -1,0 +1,42 @@
+.idj.sheet.actor {
+    .inventory-currency {
+        .currency {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        .currency-header {
+            flex: 0 0 13px;
+            text-align: center;
+            align-items: center;
+            margin-right: .5rem;
+            i {
+                font-size: 20px;
+            }
+        }
+        .currency-item {
+            display: flex;
+            align-items: center;
+            background: var(--faint-color);
+            border-radius: 5px;
+            padding: 0 .5rem 0 0;
+            margin-right: .5rem;
+            line-height: 30px;
+            input {
+                text-align: right;
+                flex: 1;
+                padding-left: .5rem;
+                border: 0;
+                background: none;
+                margin: 0;
+            }
+            label {
+                margin-left: .25rem;
+                flex: unset;
+            }
+            .denomination {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

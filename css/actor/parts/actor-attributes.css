@@ -1,0 +1,83 @@
+.idj.sheet.actor .attributes-body .dados .ability-scores {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 2px groove #eeede0;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.idj.sheet.actor .attributes-body .dados .ability-scores .ability {
+  text-align: center;
+  margin: 0px 1px;
+}
+.idj.sheet.actor .attributes-body .dados .ability-scores .ability:last-child {
+  border-bottom: none;
+  margin-bottom: -1px;
+}
+.idj.sheet.actor .attributes-body .dados .ability-scores .ability:not(:last-child) {
+  border-right: 1px solid #c9c7b8;
+}
+.idj.sheet.actor .attributes-body .recursos {
+  font-size: 10px;
+  text-align: center;
+  min-height: 70px;
+  margin: 5px 0;
+}
+.idj.sheet.actor .attributes-body .recursos label {
+  display: inline-block;
+  width: 30%;
+  max-width: 30%;
+}
+.idj.sheet.actor .attributes-body .recursos input {
+  width: 50px;
+  height: 30px;
+  border: 0;
+  background: none;
+  font-size: 2em;
+  margin: 0;
+}
+.idj.sheet.actor .attributes-body .recursos .attribute {
+  height: auto;
+  margin: 0;
+  border: 2px groove #eeede0;
+  border-radius: 0;
+}
+.idj.sheet.actor .attributes-body .recursos .attribute .attribute-value:disabled {
+  color: #191813;
+}
+.idj.sheet.actor .attributes-body .recursos .attribute-footer input {
+  font-size: 1rem;
+}
+.idj.sheet.actor .attributes-body .recursos ul.attributes {
+  flex: 0 0 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.idj.sheet.actor .attributes-body .recursos .box-title {
+  height: 18px;
+  line-height: 16px;
+  margin: 4px 3px 2px;
+  font-size: 18px;
+  border-bottom: 1px solid #c9c7b8;
+}
+.idj.sheet.actor .attributes-body .recursos .sep {
+  flex: none;
+  margin: 0 1px;
+  display: inline;
+  position: relative;
+  color: #7a7971;
+  font-weight: normal;
+  font-size: 24px;
+}
+.idj.sheet.actor .attributes-body .recursos .defesa .ability-scores .item-header h4 {
+  height: 18px;
+  line-height: 16px;
+  margin: 4px 3px 2px;
+  font-size: 18px;
+  border-bottom: 1px solid #c9c7b8;
+}
+.idj.sheet.actor .attributes-body .recursos .defesa .ability-scores input[type="number"] {
+  border: 0;
+  background: none;
+}

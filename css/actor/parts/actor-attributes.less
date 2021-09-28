@@ -1,0 +1,99 @@
+.idj.sheet.actor {
+    .attributes-body {
+        .dados {
+            .ability-scores {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                border: 2px groove #eeede0;
+                border-radius: 3px;
+                text-transform: uppercase;
+                .ability {
+                    text-align: center;
+                    margin: 0px 1px;
+                    &:last-child {
+                        border-bottom: none;
+                        margin-bottom: -1px;
+                    }
+                    &:not(:last-child) {
+                        border-right: 1px solid #c9c7b8;
+                    }
+                }
+            }
+        }
+        .recursos {
+            font-size: 10px;
+            text-align: center;
+            min-height: 70px;
+            margin:5px 0;
+            label {
+                display: inline-block;
+                width: 30%;
+                max-width: 30%;
+            }
+            input {
+                width: 50px;
+                height: 30px;
+                border: 0;
+                background: none;
+                font-size: 2em;
+                margin: 0;
+            }
+            .attribute {
+                height: auto;
+                margin: 0;
+                border: 2px groove #eeede0;
+                border-radius: 0;
+                .attribute-value {
+                    &:disabled {
+                        color: #191813;
+                    }
+                }
+            }
+            .attribute-footer {
+                input {
+                    font-size: 1rem;
+                }
+            }
+            ul.attributes {
+                flex: 0 0 60px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .box-title {
+                height: 18px;
+                line-height: 16px;
+                margin: 4px 3px 2px;
+                font-size: 18px;
+                border-bottom: 1px solid #c9c7b8;
+            }
+            .sep {
+                flex: none;
+                margin: 0 1px;
+                display: inline;
+                position: relative;
+                color: #7a7971;
+                font-weight: normal;
+                font-size: 24px;
+            }
+            .defesa {
+                .ability-scores {
+                    .item-header {
+                        h4 {
+                            height: 18px;
+                            line-height: 16px;
+                            margin: 4px 3px 2px;
+                            font-size: 18px;
+                            border-bottom: 1px solid #c9c7b8;
+                        }   
+                    }
+                    input[type="number"] {
+                        border: 0;
+                        background: none;
+                    }
+                }
+            } 
+        }
+    }
+}

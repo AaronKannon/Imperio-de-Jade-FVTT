@@ -1,0 +1,83 @@
+@import "./parts/actor-header.less";
+@import "./parts/actor-attributes.less";
+@import "./parts/actor-skills.less";
+@import "./parts/actor-items.less";
+
+@light-color: rgba(0, 0, 0, .25);
+@encumbrance-bar: #00a86b;
+@encumbrance-bar-outline: #3cb371;
+@encumbrance-outline: rgba(0, 0, 0, .9);
+
+.idj.sheet.actor {
+    .window-content {
+        .tab.journal {
+            display: flex;
+        }
+    }
+    .sheet-body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        .attributes-body {
+            padding: 0 1rem 1em 1rem;
+            display: flex;
+            scrollbar-width: thin;
+            .dados {
+                width: 55%;
+                position: relative;
+                float: left;
+            }
+            .skills {
+                width: 44%;
+                position: relative;
+                float: right;
+                margin-left: 1%;
+            }
+        }
+    }     
+    .encumbrance {
+        background: @light-color;
+        position: relative;
+        box-shadow: 0 0 0 1px @encumbrance-outline inset;
+        .encumbrance-bar {
+            position: absolute;
+            top: 1px;
+            @count-font: rgba(0, 0, 0, .9);
+            left: 1px;
+            bottom: 1px;
+            max-width: calc(100% - 2px);
+            border: 1px solid @encumbrance-bar-outline;
+            background: @encumbrance-bar;
+        }
+        .encumbrance-label {
+            display: block;
+            position: relative;
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+            color: #EEE;
+            text-shadow: 0 0 2px #000;
+        }
+        .encumbrance-breakpoint {
+            position: absolute;
+            width: 0;
+            height: 0;
+            transform: translateX(-50%);
+            border: 4px solid transparent;
+        }
+        .encumbrance-30 {
+            left: 30%;
+        }
+        .arrow-up {
+            bottom: 0;
+            border-bottom-color: @encumbrance-outline;
+        }
+        .arrow-down {
+            top: 0;
+            border-top-color: @encumbrance-outline;
+        }
+    }
+}
